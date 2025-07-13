@@ -1,0 +1,1966 @@
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    kid: NaN,
+    control_number: NaN,
+    total_charge: NaN,
+    rules: {
+      create: [
+        "Avgiftsparkering - Billett / elektronisk registrering utløpt - pforskr.§31(2)",
+        "Avgiftsparkering - Gyldig billett ikke synlig i frontruten / ingen gyldig elektronisk registrering funnet - pforskr.§31(2)"
+      ]
+    },
+    created_at: "17.07.2024 07:22",
+    status: "pending",
++   invoice_file: String
+  }
+}
+
+Argument `invoice_file` is missing. {"timestamp":"2024-07-17 07:22:06"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    kid: NaN,
+    control_number: NaN,
+    total_charge: NaN,
+    rules: {
+      create: [
+        "Avgiftsparkering - Billett / elektronisk registrering utløpt - pforskr.§31(2)",
+        "Avgiftsparkering - Gyldig billett ikke synlig i frontruten / ingen gyldig elektronisk registrering funnet - pforskr.§31(2)"
+      ]
+    },
+    created_at: "17.07.2024 07:22",
+    status: "pending",
++   invoice_file: String
+  }
+}
+
+Argument `invoice_file` is missing. {"timestamp":"2024-07-17 07:22:06"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    control_number: NaN,
+    total_charge: NaN,
+    invoice_file: "xxx",
+    rules: {
+      create: [
+        "Avgiftsparkering - Billett / elektronisk registrering utløpt - pforskr.§31(2)",
+        "Avgiftsparkering - Gyldig billett ikke synlig i frontruten / ingen gyldig elektronisk registrering funnet - pforskr.§31(2)"
+      ]
+    },
+    created_at: "17.07.2024 07:22",
+    status: "pending",
++   kid: String
+  }
+}
+
+Argument `kid` is missing. {"timestamp":"2024-07-17 07:22:42"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    control_number: NaN,
+    total_charge: NaN,
+    invoice_file: "xxx",
+    rules: {
+      create: [
+        "Avgiftsparkering - Billett / elektronisk registrering utløpt - pforskr.§31(2)",
+        "Avgiftsparkering - Gyldig billett ikke synlig i frontruten / ingen gyldig elektronisk registrering funnet - pforskr.§31(2)"
+      ]
+    },
+    created_at: "17.07.2024 07:22",
+    status: "pending",
++   kid: String
+  }
+}
+
+Argument `kid` is missing. {"timestamp":"2024-07-17 07:22:42"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    kid: 12345678,
+         ~~~~~~~~
+    control_number: 87654321,
+    total_charge: 500,
+    invoice_file: "xxx",
+    rules: {
+      create: [
+        "Avgiftsparkering - Billett / elektronisk registrering utløpt - pforskr.§31(2)",
+        "Avgiftsparkering - Gyldig billett ikke synlig i frontruten / ingen gyldig elektronisk registrering funnet - pforskr.§31(2)"
+      ]
+    },
+    created_at: "17.07.2024 07:23",
+    status: "pending"
+  }
+}
+
+Argument `kid`: Invalid value provided. Expected String, provided Int. {"timestamp":"2024-07-17 07:23:27"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    kid: 12345678,
+         ~~~~~~~~
+    control_number: 87654321,
+    total_charge: 500,
+    invoice_file: "xxx",
+    rules: {
+      create: [
+        "Avgiftsparkering - Billett / elektronisk registrering utløpt - pforskr.§31(2)",
+        "Avgiftsparkering - Gyldig billett ikke synlig i frontruten / ingen gyldig elektronisk registrering funnet - pforskr.§31(2)"
+      ]
+    },
+    created_at: "17.07.2024 07:23",
+    status: "pending"
+  }
+}
+
+Argument `kid`: Invalid value provided. Expected String, provided Int. {"timestamp":"2024-07-17 07:23:27"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    kid: "12345678",
+    control_number: 87654321,
+                    ~~~~~~~~
+    total_charge: 500,
+    invoice_file: "xxx",
+    rules: {
+      create: [
+        "Avgiftsparkering - Billett / elektronisk registrering utløpt - pforskr.§31(2)",
+        "Avgiftsparkering - Gyldig billett ikke synlig i frontruten / ingen gyldig elektronisk registrering funnet - pforskr.§31(2)"
+      ]
+    },
+    created_at: "17.07.2024 07:23",
+    status: "pending"
+  }
+}
+
+Argument `control_number`: Invalid value provided. Expected String, provided Int. {"timestamp":"2024-07-17 07:23:53"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    kid: "12345678",
+    control_number: 87654321,
+                    ~~~~~~~~
+    total_charge: 500,
+    invoice_file: "xxx",
+    rules: {
+      create: [
+        "Avgiftsparkering - Billett / elektronisk registrering utløpt - pforskr.§31(2)",
+        "Avgiftsparkering - Gyldig billett ikke synlig i frontruten / ingen gyldig elektronisk registrering funnet - pforskr.§31(2)"
+      ]
+    },
+    created_at: "17.07.2024 07:23",
+    status: "pending"
+  }
+}
+
+Argument `control_number`: Invalid value provided. Expected String, provided Int. {"timestamp":"2024-07-17 07:23:53"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    kid: "12345678",
+    control_number: "87654321",
+    total_charge: 500,
+    invoice_file: "xxx",
+    rules: {
+      create: [
+        "Avgiftsparkering - Billett / elektronisk registrering utløpt - pforskr.§31(2)",
+        "Avgiftsparkering - Gyldig billett ikke synlig i frontruten / ingen gyldig elektronisk registrering funnet - pforskr.§31(2)"
+      ]
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    },
+    created_at: "17.07.2024 07:24",
+    status: "pending"
+  }
+}
+
+Argument `create`: Invalid value provided. Expected InvoiceRuleCreateWithoutInvoiceInput or InvoiceRuleUncheckedCreateWithoutInvoiceInput, provided String. {"timestamp":"2024-07-17 07:24:14"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    kid: "12345678",
+    control_number: "87654321",
+    total_charge: 500,
+    invoice_file: "xxx",
+    rules: {
+      create: [
+        "Avgiftsparkering - Billett / elektronisk registrering utløpt - pforskr.§31(2)",
+        "Avgiftsparkering - Gyldig billett ikke synlig i frontruten / ingen gyldig elektronisk registrering funnet - pforskr.§31(2)"
+      ]
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    },
+    created_at: "17.07.2024 07:24",
+    status: "pending"
+  }
+}
+
+Argument `create`: Invalid value provided. Expected InvoiceRuleCreateWithoutInvoiceInput or InvoiceRuleUncheckedCreateWithoutInvoiceInput, provided String. {"timestamp":"2024-07-17 07:24:14"}
+[31merror[39m: puppeteer is not defined {"timestamp":"2024-07-17 07:35:52"}
+[31merror[39m: puppeteer is not defined {"timestamp":"2024-07-17 07:35:52"}
+[31merror[39m: Randomstring is not defined {"timestamp":"2024-07-17 07:36:12"}
+[31merror[39m: Randomstring is not defined {"timestamp":"2024-07-17 07:36:12"}
+[31merror[39m: Cannot read properties of null (reading 'screenshot') {"timestamp":"2024-07-17 07:36:24"}
+[31merror[39m: Cannot read properties of null (reading 'screenshot') {"timestamp":"2024-07-17 07:36:24"}
+[31merror[39m: Cannot read properties of null (reading 'screenshot') {"timestamp":"2024-07-17 07:36:41"}
+[31merror[39m: Cannot read properties of null (reading 'screenshot') {"timestamp":"2024-07-17 07:36:41"}
+[31merror[39m: ENOENT: no such file or directory, open 'E:\workspace\projects\sjekk_kontroll\financial_server\storage\invoice\invoice_SR8aL99eKD.jpg' {"timestamp":"2024-07-17 07:37:29"}
+[31merror[39m: ENOENT: no such file or directory, open 'E:\workspace\projects\sjekk_kontroll\financial_server\storage\invoice\invoice_SR8aL99eKD.jpg' {"timestamp":"2024-07-17 07:37:29"}
+[31merror[39m: promiseAsyncWrapper is not defined {"timestamp":"2024-07-17 19:57:27"}
+[31merror[39m: promiseAsyncWrapper is not defined {"timestamp":"2024-07-17 19:57:27"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-17 19:57:38"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-17 19:57:38"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-17 22:05:00"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-17 22:05:00"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-17 22:05:01"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-17 22:05:01"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-17 22:05:01"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-17 22:05:01"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-17 22:05:03"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-17 22:05:03"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-17 22:05:05"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-17 22:05:05"}
+[31merror[39m: Cannot read properties of undefined (reading 'map') {"timestamp":"2024-07-17 23:19:23"}
+[31merror[39m: Cannot read properties of undefined (reading 'map') {"timestamp":"2024-07-17 23:19:23"}
+[31merror[39m: [object Object],[object Object],[object Object] {"timestamp":"2024-07-17 23:21:20"}
+[31merror[39m: [object Object],[object Object],[object Object] {"timestamp":"2024-07-17 23:21:20"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    control_number: "456",
+    total_charge: 789,
+    invoice_file: "invoices/Trz9T0ZoZa.jpg",
+    rules: {
+      create: []
+    },
+    created_at: "17.07.2024 23:21",
+    status: "pending",
++   kid: String
+  }
+}
+
+Argument `kid` is missing. {"timestamp":"2024-07-17 23:21:49"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    control_number: "456",
+    total_charge: 789,
+    invoice_file: "invoices/Trz9T0ZoZa.jpg",
+    rules: {
+      create: []
+    },
+    created_at: "17.07.2024 23:21",
+    status: "pending",
++   kid: String
+  }
+}
+
+Argument `kid` is missing. {"timestamp":"2024-07-17 23:21:49"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    control_number: "456",
+    total_charge: 789,
+    invoice_file: "invoices/V5LBldlv8B.jpg",
+    rules: {
+      create: []
+    },
+    created_at: "17.07.2024 23:23",
+    status: "pending",
++   kid_number: String
+  }
+}
+
+Argument `kid_number` is missing. {"timestamp":"2024-07-17 23:23:44"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    control_number: "456",
+    total_charge: 789,
+    invoice_file: "invoices/V5LBldlv8B.jpg",
+    rules: {
+      create: []
+    },
+    created_at: "17.07.2024 23:23",
+    status: "pending",
++   kid_number: String
+  }
+}
+
+Argument `kid_number` is missing. {"timestamp":"2024-07-17 23:23:44"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    kid_number: 123,
+                ~~~
+    control_number: "456",
+    total_charge: 789,
+    invoice_file: "invoices/51QpAVHUk4.jpg",
+    rules: {
+      create: []
+    },
+    created_at: "17.07.2024 23:24",
+    status: "pending"
+  }
+}
+
+Argument `kid_number`: Invalid value provided. Expected String, provided Int. {"timestamp":"2024-07-17 23:24:09"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    kid_number: 123,
+                ~~~
+    control_number: "456",
+    total_charge: 789,
+    invoice_file: "invoices/51QpAVHUk4.jpg",
+    rules: {
+      create: []
+    },
+    created_at: "17.07.2024 23:24",
+    status: "pending"
+  }
+}
+
+Argument `kid_number`: Invalid value provided. Expected String, provided Int. {"timestamp":"2024-07-17 23:24:09"}
+[31merror[39m: 
+Invalid `prisma.sanctions.create()` invocation:
+
+{
+  data: {
+    invoice_id: 5,
+    due_date: "Invalid date",
++   employee_pnid: String
+  }
+}
+
+Argument `employee_pnid` is missing. {"timestamp":"2024-07-17 23:24:30"}
+[31merror[39m: 
+Invalid `prisma.sanctions.create()` invocation:
+
+{
+  data: {
+    invoice_id: 5,
+    due_date: "Invalid date",
++   employee_pnid: String
+  }
+}
+
+Argument `employee_pnid` is missing. {"timestamp":"2024-07-17 23:24:30"}
+[31merror[39m: [object Object],[object Object] {"timestamp":"2024-07-17 23:25:25"}
+[31merror[39m: [object Object],[object Object] {"timestamp":"2024-07-17 23:25:25"}
+[31merror[39m: 
+Invalid `prisma.sanctions.create()` invocation:
+
+{
+  data: {
+    invoice_id: 6,
+    ~~~~~~~~~~
+    employee_pnid: "1796",
+    due_date: "Invalid date",
+?   status?: DebtStatus,
+?   deleted_at?: String | Null,
+?   payment?: PaymentCreateNestedOneWithoutSanctionInput
+  }
+}
+
+Unknown argument `invoice_id`. Available options are marked with ?. {"timestamp":"2024-07-17 23:25:43"}
+[31merror[39m: 
+Invalid `prisma.sanctions.create()` invocation:
+
+{
+  data: {
+    invoice_id: 6,
+    ~~~~~~~~~~
+    employee_pnid: "1796",
+    due_date: "Invalid date",
+?   status?: DebtStatus,
+?   deleted_at?: String | Null,
+?   payment?: PaymentCreateNestedOneWithoutSanctionInput
+  }
+}
+
+Unknown argument `invoice_id`. Available options are marked with ?. {"timestamp":"2024-07-17 23:25:43"}
+[31merror[39m: 
+Invalid `prisma.sanctions.create()` invocation:
+
+{
+  data: {
+    invoice_id: 7,
+    ~~~~~~~~~~
+    employee_pnid: "1796",
+    due_date: "07.08.2024 11:26",
+?   status?: DebtStatus,
+?   deleted_at?: String | Null,
+?   payment?: PaymentCreateNestedOneWithoutSanctionInput
+  }
+}
+
+Unknown argument `invoice_id`. Available options are marked with ?. {"timestamp":"2024-07-17 23:26:50"}
+[31merror[39m: 
+Invalid `prisma.sanctions.create()` invocation:
+
+{
+  data: {
+    invoice_id: 7,
+    ~~~~~~~~~~
+    employee_pnid: "1796",
+    due_date: "07.08.2024 11:26",
+?   status?: DebtStatus,
+?   deleted_at?: String | Null,
+?   payment?: PaymentCreateNestedOneWithoutSanctionInput
+  }
+}
+
+Unknown argument `invoice_id`. Available options are marked with ?. {"timestamp":"2024-07-17 23:26:50"}
+[31merror[39m: 
+Invalid `prisma.sanctions.create()` invocation:
+
+{
+  data: {
+    invoice: {
+    ~~~~~~~
+      connect: {
+        id: 8
+      }
+    },
+    employee_pnid: "1796",
+    due_date: "07.08.2024 11:26",
+?   status?: DebtStatus,
+?   deleted_at?: String | Null,
+?   payment?: PaymentCreateNestedOneWithoutSanctionInput
+  }
+}
+
+Unknown argument `invoice`. Available options are marked with ?. {"timestamp":"2024-07-17 23:28:21"}
+[31merror[39m: 
+Invalid `prisma.sanctions.create()` invocation:
+
+{
+  data: {
+    invoice: {
+    ~~~~~~~
+      connect: {
+        id: 8
+      }
+    },
+    employee_pnid: "1796",
+    due_date: "07.08.2024 11:26",
+?   status?: DebtStatus,
+?   deleted_at?: String | Null,
+?   payment?: PaymentCreateNestedOneWithoutSanctionInput
+  }
+}
+
+Unknown argument `invoice`. Available options are marked with ?. {"timestamp":"2024-07-17 23:28:21"}
+[31merror[39m: 
+Invalid `prisma.sanctions.create()` invocation:
+
+{
+  data: {
+    invoice_id: 9,
+    ~~~~~~~~~~
+    employee_pnid: "1796",
+    due_date: "07.08.2024 11:26",
+?   status?: DebtStatus,
+?   deleted_at?: String | Null,
+?   payment?: PaymentCreateNestedOneWithoutSanctionInput
+  }
+}
+
+Unknown argument `invoice_id`. Available options are marked with ?. {"timestamp":"2024-07-17 23:28:55"}
+[31merror[39m: 
+Invalid `prisma.sanctions.create()` invocation:
+
+{
+  data: {
+    invoice_id: 9,
+    ~~~~~~~~~~
+    employee_pnid: "1796",
+    due_date: "07.08.2024 11:26",
+?   status?: DebtStatus,
+?   deleted_at?: String | Null,
+?   payment?: PaymentCreateNestedOneWithoutSanctionInput
+  }
+}
+
+Unknown argument `invoice_id`. Available options are marked with ?. {"timestamp":"2024-07-17 23:28:55"}
+[31merror[39m: 
+Invalid `prisma.sanctions.findMany()` invocation:
+
+
+The table `sanctions` does not exist in the current database. {"timestamp":"2024-07-18 02:43:22"}
+[31merror[39m: 
+Invalid `prisma.sanctions.findMany()` invocation:
+
+
+The table `sanctions` does not exist in the current database. {"timestamp":"2024-07-18 02:43:22"}
+[31merror[39m: 
+Invalid `prisma.sanctions.findMany()` invocation:
+
+
+The table `sanctions` does not exist in the current database. {"timestamp":"2024-07-18 02:43:22"}
+[31merror[39m: 
+Invalid `prisma.sanctions.findMany()` invocation:
+
+
+The table `sanctions` does not exist in the current database. {"timestamp":"2024-07-18 02:43:22"}
+[31merror[39m: 
+Invalid `prisma.sanctions.findMany()` invocation:
+
+
+The table `sanctions` does not exist in the current database. {"timestamp":"2024-07-18 02:43:24"}
+[31merror[39m: 
+Invalid `prisma.sanctions.findMany()` invocation:
+
+
+The table `sanctions` does not exist in the current database. {"timestamp":"2024-07-18 02:43:24"}
+[31merror[39m: 
+Invalid `prisma.sanctions.findMany()` invocation:
+
+
+The table `sanctions` does not exist in the current database. {"timestamp":"2024-07-18 02:43:24"}
+[31merror[39m: 
+Invalid `prisma.sanctions.findMany()` invocation:
+
+
+The table `sanctions` does not exist in the current database. {"timestamp":"2024-07-18 02:43:24"}
+[31merror[39m: 
+Invalid `prisma.sanctions.findMany()` invocation:
+
+
+The table `sanctions` does not exist in the current database. {"timestamp":"2024-07-18 02:43:32"}
+[31merror[39m: 
+Invalid `prisma.sanctions.findMany()` invocation:
+
+
+The table `sanctions` does not exist in the current database. {"timestamp":"2024-07-18 02:43:32"}
+[31merror[39m: 
+Invalid `prisma.sanctions.findMany()` invocation:
+
+
+The table `sanctions` does not exist in the current database. {"timestamp":"2024-07-18 02:43:32"}
+[31merror[39m: 
+Invalid `prisma.sanctions.findMany()` invocation:
+
+
+The table `sanctions` does not exist in the current database. {"timestamp":"2024-07-18 02:43:32"}
+[31merror[39m: 
+Invalid `prisma.sanctions.findMany()` invocation:
+
+
+The table `sanctions` does not exist in the current database. {"timestamp":"2024-07-18 02:43:34"}
+[31merror[39m: 
+Invalid `prisma.sanctions.findMany()` invocation:
+
+
+The table `sanctions` does not exist in the current database. {"timestamp":"2024-07-18 02:43:34"}
+[31merror[39m: 
+Invalid `prisma.sanctions.findMany()` invocation:
+
+
+The table `sanctions` does not exist in the current database. {"timestamp":"2024-07-18 02:43:34"}
+[31merror[39m: 
+Invalid `prisma.sanctions.findMany()` invocation:
+
+
+The table `sanctions` does not exist in the current database. {"timestamp":"2024-07-18 02:43:34"}
+[31merror[39m: Cannot read properties of undefined (reading 'findMany') {"timestamp":"2024-07-18 02:43:57"}
+[31merror[39m: Cannot read properties of undefined (reading 'findMany') {"timestamp":"2024-07-18 02:43:57"}
+[31merror[39m: Cannot read properties of undefined (reading 'findMany') {"timestamp":"2024-07-18 02:43:57"}
+[31merror[39m: Cannot read properties of undefined (reading 'findMany') {"timestamp":"2024-07-18 02:43:57"}
+[31merror[39m: [object Object],[object Object] {"timestamp":"2024-07-18 02:52:06"}
+[31merror[39m: [object Object],[object Object] {"timestamp":"2024-07-18 02:52:06"}
+[31merror[39m: [object Object],[object Object],[object Object],[object Object] {"timestamp":"2024-07-18 02:52:25"}
+[31merror[39m: [object Object],[object Object],[object Object],[object Object] {"timestamp":"2024-07-18 02:52:25"}
+[31merror[39m: 
+Invalid `prisma.manager.create()` invocation:
+
+{
+  data: {
+    username: "alitarek",
+    password: "$2b$10$qMV7yU3VvgX3rwU52Hp/hunLI5gPkBmDGJKi87jq089OEgVghHNFi",
+    name: "Ali Tarek",
+    linked_email: "alitarek99944@gmail.com",
++   role: ManagerRole
+  }
+}
+
+Argument `role` is missing. {"timestamp":"2024-07-18 02:53:10"}
+[31merror[39m: 
+Invalid `prisma.manager.create()` invocation:
+
+{
+  data: {
+    username: "alitarek",
+    password: "$2b$10$qMV7yU3VvgX3rwU52Hp/hunLI5gPkBmDGJKi87jq089OEgVghHNFi",
+    name: "Ali Tarek",
+    linked_email: "alitarek99944@gmail.com",
++   role: ManagerRole
+  }
+}
+
+Argument `role` is missing. {"timestamp":"2024-07-18 02:53:10"}
+[31merror[39m: 
+Invalid `prisma.manager.create()` invocation:
+
+{
+  data: {
+    username: "alitarek",
+    password: "$2b$10$NAnBICUCgURGiKH2zP/oL.i4izsWm5EtOFz3hEV5lNihzPqJqj6Ie",
+    name: "Ali Tarek",
+    linked_email: "alitarek99944@gmail.com",
+    role: "admin",
++   created_at: String
+  }
+}
+
+Argument `created_at` is missing. {"timestamp":"2024-07-18 02:53:39"}
+[31merror[39m: 
+Invalid `prisma.manager.create()` invocation:
+
+{
+  data: {
+    username: "alitarek",
+    password: "$2b$10$NAnBICUCgURGiKH2zP/oL.i4izsWm5EtOFz3hEV5lNihzPqJqj6Ie",
+    name: "Ali Tarek",
+    linked_email: "alitarek99944@gmail.com",
+    role: "admin",
++   created_at: String
+  }
+}
+
+Argument `created_at` is missing. {"timestamp":"2024-07-18 02:53:39"}
+[31merror[39m: ENOENT: no such file or directory, open 'E:\workspace\projects\sjekk_kontroll\financial_server\public\images\temp_cars\images.jpg' {"timestamp":"2024-07-18 03:17:28"}
+[31merror[39m: new_files is not defined {"timestamp":"2024-07-18 03:17:56"}
+[31merror[39m: new_files is not defined {"timestamp":"2024-07-18 03:17:56"}
+[31merror[39m: new_files is not defined {"timestamp":"2024-07-18 03:19:43"}
+[31merror[39m: new_files is not defined {"timestamp":"2024-07-18 03:19:43"}
+[31merror[39m: new_files is not defined {"timestamp":"2024-07-18 03:24:56"}
+[31merror[39m: new_files is not defined {"timestamp":"2024-07-18 03:24:56"}
+[31merror[39m: new_files is not defined {"timestamp":"2024-07-18 03:25:14"}
+[31merror[39m: new_files is not defined {"timestamp":"2024-07-18 03:25:14"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-19 01:58:39"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-19 01:58:39"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-19 01:58:47"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-19 01:58:47"}
+[31merror[39m: Wrong password {"timestamp":"2024-07-19 01:58:53"}
+[31merror[39m: Wrong password {"timestamp":"2024-07-19 01:58:53"}
+[31merror[39m: Wrong password {"timestamp":"2024-07-19 01:58:55"}
+[31merror[39m: Wrong password {"timestamp":"2024-07-19 01:58:55"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-19 02:32:24"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-19 02:32:24"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-19 02:32:30"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-19 02:32:30"}
+[31merror[39m: Wrong password {"timestamp":"2024-07-19 02:32:36"}
+[31merror[39m: Wrong password {"timestamp":"2024-07-19 02:32:36"}
+[31merror[39m: jwt must be provided {"timestamp":"2024-07-19 02:46:53"}
+[31merror[39m: jwt must be provided {"timestamp":"2024-07-19 02:46:53"}
+[31merror[39m: jwt must be provided {"timestamp":"2024-07-19 02:46:53"}
+[31merror[39m: jwt must be provided {"timestamp":"2024-07-19 02:46:53"}
+[31merror[39m: [object Object] {"timestamp":"2024-07-19 02:53:15"}
+[31merror[39m: [object Object] {"timestamp":"2024-07-19 02:53:15"}
+[31merror[39m: [object Object] {"timestamp":"2024-07-19 02:53:15"}
+[31merror[39m: [object Object] {"timestamp":"2024-07-19 02:53:15"}
+[31merror[39m: [object Object] {"timestamp":"2024-07-19 02:54:38"}
+[31merror[39m: [object Object] {"timestamp":"2024-07-19 02:54:38"}
+[31merror[39m: [object Object] {"timestamp":"2024-07-19 02:54:38"}
+[31merror[39m: [object Object] {"timestamp":"2024-07-19 02:54:38"}
+[31merror[39m: 
+Invalid `prisma.login.findMany()` invocation:
+
+{
+  where: {
++   manager_id: {
++     equals: Int | IntFieldRefInput,
++     in: Int[],
++     notIn: Int[],
++     lt: Int | IntFieldRefInput,
++     lte: Int | IntFieldRefInput,
++     gt: Int | IntFieldRefInput,
++     gte: Int | IntFieldRefInput,
++     not: Int | NestedIntFilter
++   }
+  }
+}
+
+Argument `manager_id` is missing. {"timestamp":"2024-07-19 21:08:20"}
+[31merror[39m: 
+Invalid `prisma.login.findMany()` invocation:
+
+{
+  where: {
++   manager_id: {
++     equals: Int | IntFieldRefInput,
++     in: Int[],
++     notIn: Int[],
++     lt: Int | IntFieldRefInput,
++     lte: Int | IntFieldRefInput,
++     gt: Int | IntFieldRefInput,
++     gte: Int | IntFieldRefInput,
++     not: Int | NestedIntFilter
++   }
+  }
+}
+
+Argument `manager_id` is missing. {"timestamp":"2024-07-19 21:08:20"}
+[31merror[39m: 
+Invalid `prisma.login.findMany()` invocation:
+
+{
+  where: {
++   manager_id: {
++     equals: Int | IntFieldRefInput,
++     in: Int[],
++     notIn: Int[],
++     lt: Int | IntFieldRefInput,
++     lte: Int | IntFieldRefInput,
++     gt: Int | IntFieldRefInput,
++     gte: Int | IntFieldRefInput,
++     not: Int | NestedIntFilter
++   }
+  }
+}
+
+Argument `manager_id` is missing. {"timestamp":"2024-07-19 21:08:20"}
+[31merror[39m: 
+Invalid `prisma.login.findMany()` invocation:
+
+{
+  where: {
++   manager_id: {
++     equals: Int | IntFieldRefInput,
++     in: Int[],
++     notIn: Int[],
++     lt: Int | IntFieldRefInput,
++     lte: Int | IntFieldRefInput,
++     gt: Int | IntFieldRefInput,
++     gte: Int | IntFieldRefInput,
++     not: Int | NestedIntFilter
++   }
+  }
+}
+
+Argument `manager_id` is missing. {"timestamp":"2024-07-19 21:08:20"}
+[31merror[39m: 
+Invalid `prisma.login.findMany()` invocation:
+
+{
+  where: {
++   manager_id: {
++     equals: Int | IntFieldRefInput,
++     in: Int[],
++     notIn: Int[],
++     lt: Int | IntFieldRefInput,
++     lte: Int | IntFieldRefInput,
++     gt: Int | IntFieldRefInput,
++     gte: Int | IntFieldRefInput,
++     not: Int | NestedIntFilter
++   }
+  }
+}
+
+Argument `manager_id` is missing. {"timestamp":"2024-07-19 21:08:38"}
+[31merror[39m: 
+Invalid `prisma.login.findMany()` invocation:
+
+{
+  where: {
++   manager_id: {
++     equals: Int | IntFieldRefInput,
++     in: Int[],
++     notIn: Int[],
++     lt: Int | IntFieldRefInput,
++     lte: Int | IntFieldRefInput,
++     gt: Int | IntFieldRefInput,
++     gte: Int | IntFieldRefInput,
++     not: Int | NestedIntFilter
++   }
+  }
+}
+
+Argument `manager_id` is missing. {"timestamp":"2024-07-19 21:08:38"}
+[31merror[39m: 
+Invalid `prisma.login.findMany()` invocation:
+
+{
+  where: {
++   manager_id: {
++     equals: Int | IntFieldRefInput,
++     in: Int[],
++     notIn: Int[],
++     lt: Int | IntFieldRefInput,
++     lte: Int | IntFieldRefInput,
++     gt: Int | IntFieldRefInput,
++     gte: Int | IntFieldRefInput,
++     not: Int | NestedIntFilter
++   }
+  }
+}
+
+Argument `manager_id` is missing. {"timestamp":"2024-07-19 21:08:39"}
+[31merror[39m: 
+Invalid `prisma.login.findMany()` invocation:
+
+{
+  where: {
++   manager_id: {
++     equals: Int | IntFieldRefInput,
++     in: Int[],
++     notIn: Int[],
++     lt: Int | IntFieldRefInput,
++     lte: Int | IntFieldRefInput,
++     gt: Int | IntFieldRefInput,
++     gte: Int | IntFieldRefInput,
++     not: Int | NestedIntFilter
++   }
+  }
+}
+
+Argument `manager_id` is missing. {"timestamp":"2024-07-19 21:08:39"}
+[31merror[39m: 
+Invalid `prisma.login.findMany()` invocation:
+
+{
+  where: {
++   manager_id: {
++     equals: Int | IntFieldRefInput,
++     in: Int[],
++     notIn: Int[],
++     lt: Int | IntFieldRefInput,
++     lte: Int | IntFieldRefInput,
++     gt: Int | IntFieldRefInput,
++     gte: Int | IntFieldRefInput,
++     not: Int | NestedIntFilter
++   }
+  }
+}
+
+Argument `manager_id` is missing. {"timestamp":"2024-07-19 21:08:39"}
+[31merror[39m: 
+Invalid `prisma.login.findMany()` invocation:
+
+{
+  where: {
++   manager_id: {
++     equals: Int | IntFieldRefInput,
++     in: Int[],
++     notIn: Int[],
++     lt: Int | IntFieldRefInput,
++     lte: Int | IntFieldRefInput,
++     gt: Int | IntFieldRefInput,
++     gte: Int | IntFieldRefInput,
++     not: Int | NestedIntFilter
++   }
+  }
+}
+
+Argument `manager_id` is missing. {"timestamp":"2024-07-19 21:08:39"}
+[31merror[39m: 
+Invalid `prisma.login.findMany()` invocation:
+
+{
+  where: {
++   manager_id: {
++     equals: Int | IntFieldRefInput,
++     in: Int[],
++     notIn: Int[],
++     lt: Int | IntFieldRefInput,
++     lte: Int | IntFieldRefInput,
++     gt: Int | IntFieldRefInput,
++     gte: Int | IntFieldRefInput,
++     not: Int | NestedIntFilter
++   }
+  }
+}
+
+Argument `manager_id` is missing. {"timestamp":"2024-07-19 21:08:40"}
+[31merror[39m: 
+Invalid `prisma.login.findMany()` invocation:
+
+{
+  where: {
++   manager_id: {
++     equals: Int | IntFieldRefInput,
++     in: Int[],
++     notIn: Int[],
++     lt: Int | IntFieldRefInput,
++     lte: Int | IntFieldRefInput,
++     gt: Int | IntFieldRefInput,
++     gte: Int | IntFieldRefInput,
++     not: Int | NestedIntFilter
++   }
+  }
+}
+
+Argument `manager_id` is missing. {"timestamp":"2024-07-19 21:08:40"}
+[31merror[39m: Wrong password {"timestamp":"2024-07-20 00:12:18"}
+[31merror[39m: Wrong password {"timestamp":"2024-07-20 00:12:18"}
+[31merror[39m: 
+Invalid `prisma.invoice.update()` invocation:
+
+{
+  where: {
+    sanction_id: 2
+  },
+  data: {
+    deleted_at: "20.07.2024 03:04",
+    ~~~~~~~~~~
+?   kid_number?: String | StringFieldUpdateOperationsInput,
+?   control_number?: String | StringFieldUpdateOperationsInput,
+?   total_charge?: Float | FloatFieldUpdateOperationsInput,
+?   status?: InvoiceStatus | EnumInvoiceStatusFieldUpdateOperationsInput,
+?   invoice_file?: String | StringFieldUpdateOperationsInput,
+?   created_at?: String | StringFieldUpdateOperationsInput,
+?   rules?: InvoiceRuleUpdateManyWithoutInvoiceNestedInput,
+?   sanction?: SanctionUpdateOneWithoutInvoiceNestedInput
+  }
+}
+
+Unknown argument `deleted_at`. Available options are marked with ?. {"timestamp":"2024-07-20 03:04:09"}
+[31merror[39m: 
+Invalid `prisma.invoice.update()` invocation:
+
+{
+  where: {
+    sanction_id: 2
+  },
+  data: {
+    deleted_at: "20.07.2024 03:04",
+    ~~~~~~~~~~
+?   kid_number?: String | StringFieldUpdateOperationsInput,
+?   control_number?: String | StringFieldUpdateOperationsInput,
+?   total_charge?: Float | FloatFieldUpdateOperationsInput,
+?   status?: InvoiceStatus | EnumInvoiceStatusFieldUpdateOperationsInput,
+?   invoice_file?: String | StringFieldUpdateOperationsInput,
+?   created_at?: String | StringFieldUpdateOperationsInput,
+?   rules?: InvoiceRuleUpdateManyWithoutInvoiceNestedInput,
+?   sanction?: SanctionUpdateOneWithoutInvoiceNestedInput
+  }
+}
+
+Unknown argument `deleted_at`. Available options are marked with ?. {"timestamp":"2024-07-20 03:04:09"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-23 08:01:44"}
+[31merror[39m: Manager not found {"timestamp":"2024-07-23 08:01:44"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    kid_number: "100000",
+    control_number: "22264",
+    sanction_id: 9,
+    total_charge: 88198,
+    invoice_file: "invoices/4O4npkag19.jpg",
+    rules: {
+      create: [
+        {
+          rule: {
+            name: "1 - Avgiftsparkering - Billett / elektronisk registrering utløpt - pforskr.§31(2)",
+            charge: 660
+          }
+        },
+        {
+          rule: {
+            name: "2 - Avgiftsparkering - Gyldig billett ikke synlig i frontruten / ingen gyldig elektronisk registrering funnet - pforskr.§31(2)",
+            charge: 660
+          }
+        }
+      ]
+    },
+    created_at: "23.07.2024 08:22",
+    status: "pending"
+  }
+}
+
+Argument `name` is missing. {"timestamp":"2024-07-23 08:22:48"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    kid_number: "100000",
+    control_number: "22264",
+    sanction_id: 9,
+    total_charge: 88198,
+    invoice_file: "invoices/4O4npkag19.jpg",
+    rules: {
+      create: [
+        {
+          rule: {
+            name: "1 - Avgiftsparkering - Billett / elektronisk registrering utløpt - pforskr.§31(2)",
+            charge: 660
+          }
+        },
+        {
+          rule: {
+            name: "2 - Avgiftsparkering - Gyldig billett ikke synlig i frontruten / ingen gyldig elektronisk registrering funnet - pforskr.§31(2)",
+            charge: 660
+          }
+        }
+      ]
+    },
+    created_at: "23.07.2024 08:22",
+    status: "pending"
+  }
+}
+
+Argument `name` is missing. {"timestamp":"2024-07-23 08:22:48"}
+[31merror[39m: 
+Invalid `prisma.invoice.update()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. Record to update not found. {"timestamp":"2024-07-23 08:23:42"}
+[31merror[39m: 
+Invalid `prisma.invoice.update()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. Record to update not found. {"timestamp":"2024-07-23 08:23:42"}
+[31merror[39m: 
+Invalid `prisma.invoice.update()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. Record to update not found. {"timestamp":"2024-07-23 08:24:38"}
+[31merror[39m: 
+Invalid `prisma.invoice.update()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. Record to update not found. {"timestamp":"2024-07-23 08:24:38"}
+[31merror[39m: 
+Invalid `prisma.invoice.update()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. Record to update not found. {"timestamp":"2024-07-23 08:24:57"}
+[31merror[39m: 
+Invalid `prisma.invoice.update()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. Record to update not found. {"timestamp":"2024-07-23 08:24:57"}
+[31merror[39m: new_files is not defined {"timestamp":"2024-07-23 08:57:34"}
+[31merror[39m: new_files is not defined {"timestamp":"2024-07-23 08:57:34"}
+[31merror[39m: new_files is not defined {"timestamp":"2024-07-23 08:58:03"}
+[31merror[39m: new_files is not defined {"timestamp":"2024-07-23 08:58:03"}
+[31merror[39m: new_files is not defined {"timestamp":"2024-07-23 09:01:16"}
+[31merror[39m: new_files is not defined {"timestamp":"2024-07-23 09:01:16"}
+[31merror[39m: new_files is not defined {"timestamp":"2024-07-23 09:01:31"}
+[31merror[39m: new_files is not defined {"timestamp":"2024-07-23 09:01:31"}
+[31merror[39m: ENOENT: no such file or directory, open 'E:\workspace\projects\sjekk_kontroll\financial_server\storage\files\attachments\attachment_WH4U0q3lYr.jpg' {"timestamp":"2024-07-23 09:04:02"}
+[31merror[39m: new_files is not defined {"timestamp":"2024-07-23 09:04:31"}
+[31merror[39m: new_files is not defined {"timestamp":"2024-07-23 09:04:31"}
+[31merror[39m: id is not defined {"timestamp":"2024-07-23 09:06:05"}
+[31merror[39m: id is not defined {"timestamp":"2024-07-23 09:06:05"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+{
+  data: [
+    {
+      file_name: "attachment_4hHEuu6u7K.jpg",
+      file_path: "storage/files/attachments/attachment_4hHEuu6u7K.jpg",
+      file_size: "6.80 KB",
+      file_extension: "jpg",
+      file_type: "image/jpeg",
+      sanction_id: 7
+    },
+    {
+      file_name: "attachment_jBlhKwcFmN.jpg",
+      file_path: "storage/files/attachments/attachment_jBlhKwcFmN.jpg",
+      file_size: "2049.30 KB",
+      file_extension: "jpg",
+      file_type: "image/jpeg",
+      sanction_id: 7
+    }
+  ]
+}
+
+Argument `uploaded_at` is missing. {"timestamp":"2024-07-23 09:06:34"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+{
+  data: [
+    {
+      file_name: "attachment_4hHEuu6u7K.jpg",
+      file_path: "storage/files/attachments/attachment_4hHEuu6u7K.jpg",
+      file_size: "6.80 KB",
+      file_extension: "jpg",
+      file_type: "image/jpeg",
+      sanction_id: 7
+    },
+    {
+      file_name: "attachment_jBlhKwcFmN.jpg",
+      file_path: "storage/files/attachments/attachment_jBlhKwcFmN.jpg",
+      file_size: "2049.30 KB",
+      file_extension: "jpg",
+      file_type: "image/jpeg",
+      sanction_id: 7
+    }
+  ]
+}
+
+Argument `uploaded_at` is missing. {"timestamp":"2024-07-23 09:06:34"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+{
+  data: [
+    {
+      file_name: "attachment_cGCQA4W4OZ.jpg",
+      file_path: "storage/files/attachments/attachment_cGCQA4W4OZ.jpg",
+      file_size: "6.80 KB",
+      file_extension: "jpg",
+      file_type: "image/jpeg",
+      sanction_id: 7,
+      uploaded_at: "23.07.2024 09:07"
+    },
+    {
+      file_name: "attachment_Ugf46qrNFj.jpg",
+      file_path: "storage/files/attachments/attachment_Ugf46qrNFj.jpg",
+      file_size: "2049.30 KB",
+      file_extension: "jpg",
+      file_type: "image/jpeg",
+      sanction_id: 7,
+      uploaded_at: "23.07.2024 09:07"
+    }
+  ]
+}
+
+Argument `uploaded_by_id` is missing. {"timestamp":"2024-07-23 09:07:03"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+{
+  data: [
+    {
+      file_name: "attachment_cGCQA4W4OZ.jpg",
+      file_path: "storage/files/attachments/attachment_cGCQA4W4OZ.jpg",
+      file_size: "6.80 KB",
+      file_extension: "jpg",
+      file_type: "image/jpeg",
+      sanction_id: 7,
+      uploaded_at: "23.07.2024 09:07"
+    },
+    {
+      file_name: "attachment_Ugf46qrNFj.jpg",
+      file_path: "storage/files/attachments/attachment_Ugf46qrNFj.jpg",
+      file_size: "2049.30 KB",
+      file_extension: "jpg",
+      file_type: "image/jpeg",
+      sanction_id: 7,
+      uploaded_at: "23.07.2024 09:07"
+    }
+  ]
+}
+
+Argument `uploaded_by_id` is missing. {"timestamp":"2024-07-23 09:07:03"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+{
+  data: [
+    {
+      file_name: "attachment_TOUlIHPG9S.jpg",
+      file_path: "storage/files/attachments/attachment_TOUlIHPG9S.jpg",
+      file_size: "6.80",
+      file_extension: "jpg",
+      file_type: "image",
+      sanction_id: 7,
+      uploaded_at: "23.07.2024 09:08"
+    },
+    {
+      file_name: "attachment_6oCtmmuG4z.jpg",
+      file_path: "storage/files/attachments/attachment_6oCtmmuG4z.jpg",
+      file_size: "2049.30",
+      file_extension: "jpg",
+      file_type: "image",
+      sanction_id: 7,
+      uploaded_at: "23.07.2024 09:08"
+    }
+  ]
+}
+
+Argument `uploaded_by_id` is missing. {"timestamp":"2024-07-23 09:08:04"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+{
+  data: [
+    {
+      file_name: "attachment_TOUlIHPG9S.jpg",
+      file_path: "storage/files/attachments/attachment_TOUlIHPG9S.jpg",
+      file_size: "6.80",
+      file_extension: "jpg",
+      file_type: "image",
+      sanction_id: 7,
+      uploaded_at: "23.07.2024 09:08"
+    },
+    {
+      file_name: "attachment_6oCtmmuG4z.jpg",
+      file_path: "storage/files/attachments/attachment_6oCtmmuG4z.jpg",
+      file_size: "2049.30",
+      file_extension: "jpg",
+      file_type: "image",
+      sanction_id: 7,
+      uploaded_at: "23.07.2024 09:08"
+    }
+  ]
+}
+
+Argument `uploaded_by_id` is missing. {"timestamp":"2024-07-23 09:08:04"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+{
+  data: [
+    {
+      file_name: "attachment_UWGUs4gsb0.jpg",
+      file_path: "storage/files/attachments/attachment_UWGUs4gsb0.jpg",
+      file_size: "6.80",
+      file_extension: "jpg",
+      file_type: "image",
+      sanction_id: 7,
+      uploaded_at: "23.07.2024 09:08",
+      uploaded_by_id: 1
+    },
+    {
+      file_name: "attachment_avHXk8hWGN.jpg",
+      file_path: "storage/files/attachments/attachment_avHXk8hWGN.jpg",
+      file_size: "2049.30",
+      file_extension: "jpg",
+      file_type: "image",
+      sanction_id: 7,
+      uploaded_at: "23.07.2024 09:08",
+      uploaded_by_id: 1
+    }
+  ]
+}
+
+Argument `file_size`: Invalid value provided. Expected Float, provided String. {"timestamp":"2024-07-23 09:08:36"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+{
+  data: [
+    {
+      file_name: "attachment_UWGUs4gsb0.jpg",
+      file_path: "storage/files/attachments/attachment_UWGUs4gsb0.jpg",
+      file_size: "6.80",
+      file_extension: "jpg",
+      file_type: "image",
+      sanction_id: 7,
+      uploaded_at: "23.07.2024 09:08",
+      uploaded_by_id: 1
+    },
+    {
+      file_name: "attachment_avHXk8hWGN.jpg",
+      file_path: "storage/files/attachments/attachment_avHXk8hWGN.jpg",
+      file_size: "2049.30",
+      file_extension: "jpg",
+      file_type: "image",
+      sanction_id: 7,
+      uploaded_at: "23.07.2024 09:08",
+      uploaded_by_id: 1
+    }
+  ]
+}
+
+Argument `file_size`: Invalid value provided. Expected Float, provided String. {"timestamp":"2024-07-23 09:08:36"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+{
+  data: [
+    {
+      file_name: "attachment_jIzMN0MYbD.jpg",
+      file_path: "storage/files/attachments/attachment_jIzMN0MYbD.jpg",
+      file_size: 6.8,
+      file_extension: "jpg",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:15",
+      uploaded_by_id: 1
+    },
+    {
+      file_name: "attachment_BNB8ZMhmCM.png",
+      file_path: "storage/files/attachments/attachment_BNB8ZMhmCM.png",
+      file_size: 2.31,
+      file_extension: "png",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:15",
+      uploaded_by_id: 1
+    }
+  ]
+}
+
+Argument `sanction_id` is missing. {"timestamp":"2024-07-23 09:15:27"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+{
+  data: [
+    {
+      file_name: "attachment_jIzMN0MYbD.jpg",
+      file_path: "storage/files/attachments/attachment_jIzMN0MYbD.jpg",
+      file_size: 6.8,
+      file_extension: "jpg",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:15",
+      uploaded_by_id: 1
+    },
+    {
+      file_name: "attachment_BNB8ZMhmCM.png",
+      file_path: "storage/files/attachments/attachment_BNB8ZMhmCM.png",
+      file_size: 2.31,
+      file_extension: "png",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:15",
+      uploaded_by_id: 1
+    }
+  ]
+}
+
+Argument `sanction_id` is missing. {"timestamp":"2024-07-23 09:15:27"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+{
+  data: [
+    {
+      file_name: "attachment_MkvQ5iVufx.jpg",
+      file_path: "storage/files/attachments/attachment_MkvQ5iVufx.jpg",
+      file_size: 6.8,
+      file_extension: "jpg",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:15",
+      uploaded_by_id: 1
+    },
+    {
+      file_name: "attachment_rAquoaIJcb.png",
+      file_path: "storage/files/attachments/attachment_rAquoaIJcb.png",
+      file_size: 2.31,
+      file_extension: "png",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:15",
+      uploaded_by_id: 1
+    }
+  ]
+}
+
+Argument `sanction_id` is missing. {"timestamp":"2024-07-23 09:15:52"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+{
+  data: [
+    {
+      file_name: "attachment_MkvQ5iVufx.jpg",
+      file_path: "storage/files/attachments/attachment_MkvQ5iVufx.jpg",
+      file_size: 6.8,
+      file_extension: "jpg",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:15",
+      uploaded_by_id: 1
+    },
+    {
+      file_name: "attachment_rAquoaIJcb.png",
+      file_path: "storage/files/attachments/attachment_rAquoaIJcb.png",
+      file_size: 2.31,
+      file_extension: "png",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:15",
+      uploaded_by_id: 1
+    }
+  ]
+}
+
+Argument `sanction_id` is missing. {"timestamp":"2024-07-23 09:15:52"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+{
+  data: [
+    {
+      file_name: "attachment_fbe6MbQcqh.jpg",
+      file_path: "storage/files/attachments/attachment_fbe6MbQcqh.jpg",
+      file_size: 6.8,
+      file_extension: "jpg",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:16",
+      uploaded_by_id: 1
+    },
+    {
+      file_name: "attachment_MFCQ4q99HA.png",
+      file_path: "storage/files/attachments/attachment_MFCQ4q99HA.png",
+      file_size: 2.31,
+      file_extension: "png",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:16",
+      uploaded_by_id: 1
+    }
+  ]
+}
+
+Argument `sanction_id` is missing. {"timestamp":"2024-07-23 09:16:20"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+{
+  data: [
+    {
+      file_name: "attachment_fbe6MbQcqh.jpg",
+      file_path: "storage/files/attachments/attachment_fbe6MbQcqh.jpg",
+      file_size: 6.8,
+      file_extension: "jpg",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:16",
+      uploaded_by_id: 1
+    },
+    {
+      file_name: "attachment_MFCQ4q99HA.png",
+      file_path: "storage/files/attachments/attachment_MFCQ4q99HA.png",
+      file_size: 2.31,
+      file_extension: "png",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:16",
+      uploaded_by_id: 1
+    }
+  ]
+}
+
+Argument `sanction_id` is missing. {"timestamp":"2024-07-23 09:16:20"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+{
+  data: [
+    {
+      file_name: "attachment_LJ1fNmlYYa.jpg",
+      file_path: "storage/files/attachments/attachment_LJ1fNmlYYa.jpg",
+      file_size: 6.8,
+      file_extension: "jpg",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:16",
+      uploaded_by_id: 1
+    },
+    {
+      file_name: "attachment_Gb5mAHj9wP.png",
+      file_path: "storage/files/attachments/attachment_Gb5mAHj9wP.png",
+      file_size: 2.31,
+      file_extension: "png",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:16",
+      uploaded_by_id: 1
+    }
+  ]
+}
+
+Argument `sanction_id` is missing. {"timestamp":"2024-07-23 09:16:56"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+{
+  data: [
+    {
+      file_name: "attachment_LJ1fNmlYYa.jpg",
+      file_path: "storage/files/attachments/attachment_LJ1fNmlYYa.jpg",
+      file_size: 6.8,
+      file_extension: "jpg",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:16",
+      uploaded_by_id: 1
+    },
+    {
+      file_name: "attachment_Gb5mAHj9wP.png",
+      file_path: "storage/files/attachments/attachment_Gb5mAHj9wP.png",
+      file_size: 2.31,
+      file_extension: "png",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:16",
+      uploaded_by_id: 1
+    }
+  ]
+}
+
+Argument `sanction_id` is missing. {"timestamp":"2024-07-23 09:16:56"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+{
+  data: [
+    {
+      file_name: "attachment_qzqAZ2MNhb.jpg",
+      file_path: "storage/files/attachments/attachment_qzqAZ2MNhb.jpg",
+      file_size: 6.8,
+      file_extension: "jpg",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:18",
+      uploaded_by_id: 1
+    },
+    {
+      file_name: "attachment_ChnDeVvEAW.png",
+      file_path: "storage/files/attachments/attachment_ChnDeVvEAW.png",
+      file_size: 2.31,
+      file_extension: "png",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:18",
+      uploaded_by_id: 1
+    }
+  ]
+}
+
+Argument `sanction_id` is missing. {"timestamp":"2024-07-23 09:18:06"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+{
+  data: [
+    {
+      file_name: "attachment_qzqAZ2MNhb.jpg",
+      file_path: "storage/files/attachments/attachment_qzqAZ2MNhb.jpg",
+      file_size: 6.8,
+      file_extension: "jpg",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:18",
+      uploaded_by_id: 1
+    },
+    {
+      file_name: "attachment_ChnDeVvEAW.png",
+      file_path: "storage/files/attachments/attachment_ChnDeVvEAW.png",
+      file_size: 2.31,
+      file_extension: "png",
+      file_type: "image",
+      sanction_id: NaN,
+      uploaded_at: "23.07.2024 09:18",
+      uploaded_by_id: 1
+    }
+  ]
+}
+
+Argument `sanction_id` is missing. {"timestamp":"2024-07-23 09:18:06"}
+[31merror[39m: 
+Invalid `prisma.invoice.findFirst()` invocation:
+
+{
+  where: {
+    control_number: 22264
+                    ~~~~~
+  }
+}
+
+Argument `control_number`: Invalid value provided. Expected StringFilter or String, provided Int. {"timestamp":"2024-07-23 09:18:56"}
+[31merror[39m: 
+Invalid `prisma.invoice.findFirst()` invocation:
+
+{
+  where: {
+    control_number: 22264
+                    ~~~~~
+  }
+}
+
+Argument `control_number`: Invalid value provided. Expected StringFilter or String, provided Int. {"timestamp":"2024-07-23 09:18:56"}
+[31merror[39m: 
+Invalid `prisma.manager.findFirst()` invocation:
+
+
+Database `finance` does not exist on the database server at `localhost:3306`. {"timestamp":"2024-07-27 15:40:10"}
+[31merror[39m: 
+Invalid `prisma.manager.findFirst()` invocation:
+
+
+Database `finance` does not exist on the database server at `localhost:3306`. {"timestamp":"2024-07-27 15:40:10"}
+[31merror[39m: 
+Invalid `prisma.manager.create()` invocation:
+
+
+Database `finance` does not exist on the database server at `localhost:3306`. {"timestamp":"2024-07-27 15:40:34"}
+[31merror[39m: 
+Invalid `prisma.manager.create()` invocation:
+
+
+Database `finance` does not exist on the database server at `localhost:3306`. {"timestamp":"2024-07-27 15:40:34"}
+[31merror[39m: [object Object],[object Object] {"timestamp":"2024-07-27 16:15:07"}
+[31merror[39m: [object Object],[object Object] {"timestamp":"2024-07-27 16:15:07"}
+[31merror[39m: [object Object] {"timestamp":"2024-07-27 16:16:05"}
+[31merror[39m: [object Object] {"timestamp":"2024-07-27 16:16:05"}
+[31merror[39m: [object Object] {"timestamp":"2024-07-27 16:17:16"}
+[31merror[39m: [object Object] {"timestamp":"2024-07-27 16:17:16"}
+[31merror[39m: 
+Invalid `prisma.manager.update()` invocation:
+
+{
+  where: {
++   id: Int
+  },
+  data: {
+    name: "mutaz",
+    username: "mutaz",
+    linked_email: "alitarek99944@gmail.com"
+  }
+}
+
+Argument `id` is missing. {"timestamp":"2024-07-27 18:50:09"}
+[31merror[39m: 
+Invalid `prisma.manager.update()` invocation:
+
+{
+  where: {
++   id: Int
+  },
+  data: {
+    name: "mutaz",
+    username: "mutaz",
+    linked_email: "alitarek99944@gmail.com"
+  }
+}
+
+Argument `id` is missing. {"timestamp":"2024-07-27 18:50:09"}
+[31merror[39m: Timed out after waiting 30000ms {"timestamp":"2024-07-28 17:05:35"}
+[31merror[39m: Timed out after waiting 30000ms {"timestamp":"2024-07-28 17:05:35"}
+[31merror[39m: Timed out after waiting 30000ms {"timestamp":"2024-07-28 17:08:28"}
+[31merror[39m: Timed out after waiting 30000ms {"timestamp":"2024-07-28 17:08:28"}
+[31merror[39m: Timed out after waiting 30000ms {"timestamp":"2024-07-28 17:09:38"}
+[31merror[39m: Timed out after waiting 30000ms {"timestamp":"2024-07-28 17:09:38"}
+[31merror[39m: Unexpected token } in JSON at position 77 {"timestamp":"2024-07-28 17:13:36"}
+[31merror[39m: Timed out after waiting 30000ms {"timestamp":"2024-07-28 17:14:32"}
+[31merror[39m: Timed out after waiting 30000ms {"timestamp":"2024-07-28 17:14:32"}
+[31merror[39m: total_sanctions is not defined {"timestamp":"2024-07-28 17:15:57"}
+[31merror[39m: total_sanctions is not defined {"timestamp":"2024-07-28 17:15:57"}
+[31merror[39m: total_sanctions is not defined {"timestamp":"2024-07-28 17:18:10"}
+[31merror[39m: total_sanctions is not defined {"timestamp":"2024-07-28 17:18:10"}
+[31merror[39m: ENOENT: no such file or directory, stat 'reports/e4K4373jxn.pdf' {"timestamp":"2024-07-28 17:23:54"}
+[31merror[39m: ENOENT: no such file or directory, stat 'reports/e4K4373jxn.pdf' {"timestamp":"2024-07-28 17:23:54"}
+[31merror[39m: ENOENT: no such file or directory, stat '/storage/reports/qCGVPl7ekh.pdf' {"timestamp":"2024-07-28 17:25:27"}
+[31merror[39m: ENOENT: no such file or directory, stat '/storage/reports/qCGVPl7ekh.pdf' {"timestamp":"2024-07-28 17:25:27"}
+[31merror[39m: ENOENT: no such file or directory, stat '../storage/reports/iYsuLlDdaE.pdf' {"timestamp":"2024-07-28 17:25:51"}
+[31merror[39m: ENOENT: no such file or directory, stat '../storage/reports/iYsuLlDdaE.pdf' {"timestamp":"2024-07-28 17:25:51"}
+[31merror[39m: ENOENT: no such file or directory, stat 'storage/reports/cLTmGlrvz5.pdf' {"timestamp":"2024-07-28 17:26:01"}
+[31merror[39m: ENOENT: no such file or directory, stat 'storage/reports/cLTmGlrvz5.pdf' {"timestamp":"2024-07-28 17:26:01"}
+[31merror[39m: ENOENT: no such file or directory, stat './storage/reports/qXG836nQD3.pdf' {"timestamp":"2024-07-28 17:26:15"}
+[31merror[39m: ENOENT: no such file or directory, stat './storage/reports/qXG836nQD3.pdf' {"timestamp":"2024-07-28 17:26:15"}
+[31merror[39m: 
+Invalid `prisma.financialReport.create()` invocation:
+
+{
+  data: {
+    report_file: "reports/5iI036hq5m.pdf",
+    start_date: "28-07-2024",
+    end_date: "29-07-2024",
+    report_file_size: 0,
+                      ~
+    tax_deducted: 0,
+    total_income: 0,
+    report_title: 0,
+    created_at: "28.07.2024 17:28"
+  }
+}
+
+Argument `report_file_size`: Invalid value provided. Expected String, provided Int. {"timestamp":"2024-07-28 17:28:16"}
+[31merror[39m: 
+Invalid `prisma.financialReport.create()` invocation:
+
+{
+  data: {
+    report_file: "reports/5iI036hq5m.pdf",
+    start_date: "28-07-2024",
+    end_date: "29-07-2024",
+    report_file_size: 0,
+                      ~
+    tax_deducted: 0,
+    total_income: 0,
+    report_title: 0,
+    created_at: "28.07.2024 17:28"
+  }
+}
+
+Argument `report_file_size`: Invalid value provided. Expected String, provided Int. {"timestamp":"2024-07-28 17:28:16"}
+[31merror[39m: 
+Invalid `prisma.financialReport.create()` invocation:
+
+{
+  data: {
+    report_file: "reports/wGSfwAcdEG.pdf",
+    start_date: "28-07-2024",
+    end_date: "29-07-2024",
+    report_file_size: "0",
+    tax_deducted: 0,
+    total_income: 0,
+    report_title: 0,
+                  ~
+    created_at: "28.07.2024 17:28"
+  }
+}
+
+Argument `report_title`: Invalid value provided. Expected String, provided Int. {"timestamp":"2024-07-28 17:28:31"}
+[31merror[39m: 
+Invalid `prisma.financialReport.create()` invocation:
+
+{
+  data: {
+    report_file: "reports/wGSfwAcdEG.pdf",
+    start_date: "28-07-2024",
+    end_date: "29-07-2024",
+    report_file_size: "0",
+    tax_deducted: 0,
+    total_income: 0,
+    report_title: 0,
+                  ~
+    created_at: "28.07.2024 17:28"
+  }
+}
+
+Argument `report_title`: Invalid value provided. Expected String, provided Int. {"timestamp":"2024-07-28 17:28:31"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+
+Foreign key constraint failed on the field: `sanction_id` {"timestamp":"2024-07-28 18:37:14"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+
+Foreign key constraint failed on the field: `sanction_id` {"timestamp":"2024-07-28 18:37:14"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+
+Foreign key constraint failed on the field: `sanction_id` {"timestamp":"2024-07-28 18:38:09"}
+[31merror[39m: 
+Invalid `prisma.sanctionFile.createMany()` invocation:
+
+
+Foreign key constraint failed on the field: `sanction_id` {"timestamp":"2024-07-28 18:38:09"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    kid_number: "123xfasd1",
+    control_number: 7,
+                    ~
+    sanction_id: 1,
+    total_charge: 100,
+    invoice_file: "invoices/mQ2yqGtlC2.jpg",
+    rules: {
+      create: [
+        {
+          name: "1 - Avgiftsparkering - Billett / elektronisk registrering utløpt - pforskr.§31(2)",
+          charge: 660
+        },
+        {
+          name: "2 - Avgiftsparkering - Gyldig billett ikke synlig i frontruten / ingen gyldig elektronisk registrering funnet - pforskr.§31(2)",
+          charge: 660
+        }
+      ]
+    },
+    created_at: "31.07.2024 13:58",
+    status: "pending"
+  }
+}
+
+Argument `control_number`: Invalid value provided. Expected String, provided Int. {"timestamp":"2024-07-31 13:58:25"}
+[31merror[39m: 
+Invalid `prisma.invoice.create()` invocation:
+
+{
+  data: {
+    kid_number: "123xfasd1",
+    control_number: 7,
+                    ~
+    sanction_id: 1,
+    total_charge: 100,
+    invoice_file: "invoices/mQ2yqGtlC2.jpg",
+    rules: {
+      create: [
+        {
+          name: "1 - Avgiftsparkering - Billett / elektronisk registrering utløpt - pforskr.§31(2)",
+          charge: 660
+        },
+        {
+          name: "2 - Avgiftsparkering - Gyldig billett ikke synlig i frontruten / ingen gyldig elektronisk registrering funnet - pforskr.§31(2)",
+          charge: 660
+        }
+      ]
+    },
+    created_at: "31.07.2024 13:58",
+    status: "pending"
+  }
+}
+
+Argument `control_number`: Invalid value provided. Expected String, provided Int. {"timestamp":"2024-07-31 13:58:25"}
+[31merror[39m: Manager not found {"timestamp":"2024-08-01 17:41:39"}
+[31merror[39m: Manager not found {"timestamp":"2024-08-01 17:41:39"}
+[31merror[39m: Manager not found {"timestamp":"2024-08-01 17:41:43"}
+[31merror[39m: Manager not found {"timestamp":"2024-08-01 17:41:43"}
+[31merror[39m: Manager not found {"timestamp":"2024-08-01 17:42:06"}
+[31merror[39m: Manager not found {"timestamp":"2024-08-01 17:42:06"}
+[31merror[39m: Manager not found {"timestamp":"2024-08-01 17:42:38"}
+[31merror[39m: Manager not found {"timestamp":"2024-08-01 17:42:38"}
+[31merror[39m: Unexpected token ; in JSON at position 94 {"timestamp":"2024-08-01 21:32:26"}
+[31merror[39m: 
+Invalid `prisma.sanction.create()` invocation:
+
+{
+  data: {
+    employee_pnid: "px1",
+    created_at: "01.08.2024 21:32",
+    date: "01.08.2024",
+    kid_number: 1,
+                ~
+    control_number: 1,
+    total_charge: 660,
+    due_date: "07.08.2024 11:26"
+  }
+}
+
+Argument `kid_number`: Invalid value provided. Expected String, provided Int. {"timestamp":"2024-08-01 21:32:45"}
+[31merror[39m: 
+Invalid `prisma.sanction.create()` invocation:
+
+{
+  data: {
+    employee_pnid: "px1",
+    created_at: "01.08.2024 21:32",
+    date: "01.08.2024",
+    kid_number: 1,
+                ~
+    control_number: 1,
+    total_charge: 660,
+    due_date: "07.08.2024 11:26"
+  }
+}
+
+Argument `kid_number`: Invalid value provided. Expected String, provided Int. {"timestamp":"2024-08-01 21:32:45"}
+[31merror[39m: 
+Invalid `prisma.sanction.findFirst()` invocation:
+
+{
+  where: {
+    id: 3
+  },
+  include: {
+    invoice: {
+      include: {
+        rules: true,
+        ~~~~~
+?       sanction?: true
+      }
+    },
+    sanction_files: true
+  }
+}
+
+Unknown field `rules` for include statement on model `Invoice`. Available options are marked with ?. {"timestamp":"2024-08-01 21:38:19"}
+[31merror[39m: 
+Invalid `prisma.sanction.findFirst()` invocation:
+
+{
+  where: {
+    id: 3
+  },
+  include: {
+    invoice: {
+      include: {
+        rules: true,
+        ~~~~~
+?       sanction?: true
+      }
+    },
+    sanction_files: true
+  }
+}
+
+Unknown field `rules` for include statement on model `Invoice`. Available options are marked with ?. {"timestamp":"2024-08-01 21:38:19"}
+[31merror[39m: 
+Invalid `prisma.payment.create()` invocation:
+
+
+Unique constraint failed on the constraint: `Payment_sanction_id_key` {"timestamp":"2024-08-01 22:23:55"}
+[31merror[39m: 
+Invalid `prisma.payment.create()` invocation:
+
+
+Unique constraint failed on the constraint: `Payment_sanction_id_key` {"timestamp":"2024-08-01 22:23:55"}
+[31merror[39m: 
+Invalid `prisma.payment.create()` invocation:
+
+
+Unique constraint failed on the constraint: `Payment_sanction_id_key` {"timestamp":"2024-08-01 22:23:58"}
+[31merror[39m: 
+Invalid `prisma.payment.create()` invocation:
+
+
+Unique constraint failed on the constraint: `Payment_sanction_id_key` {"timestamp":"2024-08-01 22:23:58"}
+[31merror[39m: 
+Invalid `prisma.payment.create()` invocation:
+
+
+Unique constraint failed on the constraint: `Payment_sanction_id_key` {"timestamp":"2024-08-01 22:25:14"}
+[31merror[39m: 
+Invalid `prisma.payment.create()` invocation:
+
+
+Unique constraint failed on the constraint: `Payment_sanction_id_key` {"timestamp":"2024-08-01 22:25:14"}
+[31merror[39m: OK is not defined {"timestamp":"2025-01-08 18:24:12"}
+[31merror[39m: OK is not defined {"timestamp":"2025-01-08 18:24:12"}
+[31merror[39m: invalid signature {"timestamp":"2025-02-01 11:44:38"}
+[31merror[39m: invalid signature {"timestamp":"2025-02-01 11:44:38"}
+[31merror[39m: 
+Invalid `prisma.manager.findFirst()` invocation:
+
+
+Database `sjekk_finance` does not exist on the database server at `localhost:5432`. {"timestamp":"2025-02-01 11:46:23"}
+[31merror[39m: 
+Invalid `prisma.manager.findFirst()` invocation:
+
+
+Database `sjekk_finance` does not exist on the database server at `localhost:5432`. {"timestamp":"2025-02-01 11:46:23"}
+[31merror[39m: [object Object],[object Object],[object Object] {"timestamp":"2025-02-01 11:48:01"}
+[31merror[39m: [object Object],[object Object],[object Object] {"timestamp":"2025-02-01 11:48:01"}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debt Collection Notice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .header h1 {
+            margin: 10px 0;
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        .content {
+            margin-bottom: 30px;
+        }
+
+        .content h2 {
+            color: #555;
+            font-size: 1.25em;
+        }
+
+        .details {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            background: #fafafa;
+        }
+
+        .details p {
+            margin: 5px 0;
+            line-height: 1.6;
+        }
+
+        .summary {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #e9f5e9;
+        }
+
+        .summary p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        .payment-instructions {
+            margin-bottom: 30px;
+        }
+
+        .payment-instructions ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .payment-instructions li {
+            margin: 5px 0;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cta button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 30px;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="{{logo_url}}" alt="{{company_name}} Logo">
+            <h1>Debt Collection Notice</h1>
+        </div>
+        <div class="content">
+            <h2>Dear {{recipient_name}},</h2>
+            <p>We are writing to inform you of an outstanding balance on your account. Please find the details below:</p>
+
+            <div class="details">
+                <p><strong>Account Number:</strong> {{account_number}}</p>
+                <p><strong>Outstanding Amount:</strong> {{amount_due}}</p>
+                <p><strong>Due Date:</strong> {{due_date}}</p>
+                <p><strong>Invoice Number:</strong> {{invoice_number}}</p>
+            </div>
+
+            <div class="payment-instructions">
+                <p>Please use the following payment instructions:</p>
+                <ul>
+                    <li><strong>Bank Name:</strong> {{bank_name}}</li>
+                    <li><strong>Account Number:</strong> {{bank_account_number}}</li>
+                    <li><strong>Sort Code:</strong> {{sort_code}}</li>
+                    <li><strong>Reference:</strong> {{payment_reference}}</li>
+                </ul>
+            </div>
+
+            <div class="summary">
+                <p><strong>Total Amount Due:</strong> {{amount_due}}</p>
+                <p><strong>Due Date:</strong> {{due_date}}</p>
+            </div>
+
+            <p>If you have already made this payment, please disregard this notice. If you have any questions or need further assistance, feel free to contact us.</p>
+
+            <div class="cta">
+                <button>Make Payment Now</button>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Regards,<br>{{company_name}}</p>
+            <p>Contact us: <a href="mailto:{{company_email}}">{{company_email}}</a> | Phone: {{company_phone}}</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header img {
+            max-width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .header h1 {
+            margin: 10px 0;
+            color: #222;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .header p {
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        .report-info {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        .report-info p {
+            margin: 8px 0;
+            font-size: 1.1em;
+        }
+
+        .statistics {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #e9f5e9, #d3e9d3);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .statistics h2 {
+            color: #333;
+            font-size: 1.8em;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .statistics .stat {
+            flex: 1;
+            min-width: 150px;
+            margin: 10px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .statistics .stat span {
+            font-weight: bold;
+            color: #1a7a1a;
+        }
+
+        .details {
+            margin-bottom: 30px;
+        }
+
+        .details h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        .details table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .details table,
+        .details th,
+        .details td {
+            border: 1px solid #ddd;
+        }
+
+        .details th,
+        .details td {
+            padding: 12px;
+            text-align: left;
+            font-size: 1em;
+        }
+
+        .details th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .details tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .details tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        @media (max-width: 768px) {
+            .statistics {
+                flex-direction: column;
+            }
+
+            .statistics .stat {
+                margin-bottom: 15px;
+            }
+
+            .details th,
+            .details td {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://finance.gensolv.no/storage/images/parksync.png" alt="{{company_name}} Logo">
+            <h1>{{report_title}}</h1>
+        </div>
+
+        <div class="statistics">
+            <h2>Statistics</h2>
+            <div class="stat">
+                <span>Total Sanctions:</span> {{total_sanctions}}
+            </div>
+        </div>
+
+        <div class="details">
+            <h2>Report Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Control</th>
+                        <th>Kid</th>
+                        <th>Pnid</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#sanctions}}
+                    <tr>
+                        <td>{{invoice.control_number}}</td>
+                        <td>{{invoice.kid_number}}</td>
+                        <td>{{employee_pnid}}</td>
+                        <td>{{due_date}}</td>
+                        <td>{{status}}</td>
+                    </tr>
+                    {{/sanctions}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgres"
+  url      = env("DATABASE_URL")
+}
+
+enum DebtStatus {
+  paid
+  not_paid
+  sent_to_debt_collect
+}
+
+model SanctionRule {
+  id Int @id @default(autoincrement())
+  sanction_id Int
+  sanction Sanction @relation(fields: [sanction_id], references: [id])
+
+  name String
+  charge Float
+}
+
+
+model Sanction {
+  id Int @id @default(autoincrement())
+  control_number String
+  kid_number String @unique
+  total_charge Float
+  due_date String
+  employee_pnid String
+  status DebtStatus @default(not_paid)
+
+  deleted_at String?
+  payment Payment?
+  invoice Invoice?
+  sanction_files SanctionFile[]
+  sanction_rules SanctionRule[]
+
+  created_at String
+  date String
+}
+
+enum SanctionFileType {
+  image
+  document
+}
+
+model SanctionFile {
+  id Int @id @default(autoincrement())
+  file_name String
+  file_type SanctionFileType
+  file_extension String
+  file_size Float
+  file_path String
+
+  uploaded_at String
+  uploaded_by_id Int
+  uploaded_by Manager @relation(fields: [uploaded_by_id], references: [id])
+
+  sanction_id Int
+  sanction Sanction @relation(fields: [sanction_id], references: [id])
+}
+
+model FinancialReport {
+  id Int @id @default(autoincrement())
+  report_file String
+  start_date String
+  end_date String
+  total_income Float
+  tax_deducted Float
+
+  report_title String
+  report_file_size String
+
+  created_at String
+  deleted_at String?
+}
+
+
+model Payment {
+  id Int @id @default(autoincrement())
+  client_name String
+  plate_number String
+  charged_at String
+  paid_at String
+  paid_amount Float
+
+  control_number String
+
+  sanction_id Int? @unique
+  sanction Sanction? @relation(fields: [sanction_id], references: [id])
+}
+
+enum InvoiceStatus {
+  collected
+  pending
+}
+
+model Invoice {
+  id Int @id @default(autoincrement())
+  status InvoiceStatus
+
+  invoice_file String
+  created_at String
+
+  sanction_id Int? @unique
+  sanction Sanction? @relation(fields: [sanction_id], references: [id])
+
+  deleted_at String?
+}
+
+enum ManagerRole {
+  admin
+  supervisor
+  reader
+}
+
+model Manager {
+  id Int @id @default(autoincrement())
+  name String
+  username String
+  password String
+  linked_email String
+
+  role ManagerRole
+  created_at String
+
+  uploaded_sanctions_files SanctionFile[]
+  logins Login[]
+  last_login_time String?
+
+  deleted_at String?
+}
+
+model Login {
+  id Int @id @default(autoincrement())
+  manager_id Int
+  manager Manager @relation(fields: [manager_id], references: [id])
+
+  login_time String
+  ip_address String
+  hostname String
+  token String
+
+  created_at String
+}

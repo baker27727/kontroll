@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Template</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .invoice-box {
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      border: 1px solid #eee;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      font-size: 16px;
+      line-height: 24px;
+      font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+      color: #555;
+      background: #fff;
+    }
+    .invoice-box img {
+      max-width: 100%;
+      height: auto;
+    }
+    .invoice-header {
+      margin-bottom: 20px;
+    }
+    .invoice-section {
+      margin-bottom: 30px;
+    }
+    .invoice-section h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="invoice-box rounded-md">
+    <header class="invoice-header text-center">
+      <img src="https://finance.gensolv.no/storage/images/parksync.png" alt="Company Logo" class="mb-4 mx-auto">
+      <h1 class="text-3xl font-bold text-gray-800">Invoice #10203</h1>
+      <p class="text-gray-600">Thank you for your business!</p>
+    </header>
+
+    <section class="invoice-section">
+      <h2 class="text-xl font-semibold text-gray-800">Client Information</h2>
+      <div class="space-y-1">
+        <p><span class="font-medium text-gray-700">Client Name:</span> John Doe</p>
+        <p><span class="font-medium text-gray-700">Kid Number:</span> 12345678</p>
+        <p><span class="font-medium text-gray-700">Control Number:</span> 87654321</p>
+      </div>
+    </section>
+
+    <section class="invoice-section">
+      <h2 class="text-xl font-semibold text-gray-800">Invoice Details</h2>
+      <div class="space-y-1">
+        <p><span class="font-medium text-gray-700">Total Charge:</span> $500.00</p>
+        <p><span class="font-medium text-gray-700">Due Date:</span> 2024-12-31</p>
+        <p><span class="font-medium text-gray-700">Plate Number:</span> ABC-1234</p>
+        <p><span class="font-medium text-gray-700">Violated At:</span> 2024-07-01</p>
+      </div>
+    </section>
+
+    <section class="invoice-section">
+      <h2 class="text-xl font-semibold text-gray-800">Violation Rules</h2>
+      <div class="space-y-1">
+        <p>1. Avgiftsparkering - Billett / elektronisk registrering utløpt - pforskr.§31(2)</p>
+        <p>2. Avgiftsparkering - Gyldig billett ikke synlig i frontruten / ingen gyldig elektronisk registrering funnet - pforskr.§31(2)</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

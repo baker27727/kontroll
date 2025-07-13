@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: 'Cairo', sans-serif;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #629cd9; /* Gray 300 */
+  border-radius: 9999px; /* Fully rounded ends */
+  border: 2px solid #ffffff; /* Space around the thumb */
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #a0aec0; /* Gray 400 */
+}
+
+
+.sidebar-scroll::-webkit-scrollbar {
+  width: 2px;
+  height: 4px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background-color: #629cd9; /* Gray 300 */
+  border-radius: 9999px; /* Fully rounded ends */
+  border: 2px solid #ffffff; /* Space around the thumb */
+}
+
+.customDatePickerWidth, 
+.customDatePickerWidth > div.react-datepicker-wrapper, 
+.customDatePickerWidth > div > div.react-datepicker__input-container
+.customDatePickerWidth > div > div.react-datepicker__input-container input {
+   width: 100%;
+}
+
+/* styles/globals.css */
+:fullscreen {
+  /* Apply styles when in full-screen mode */
+  background-color: #fff; /* Example background color */
+  overflow: hidden; /* Ensure no scrollbars */
+}
+
+.ql-container {
+  min-height: 10rem;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.ql-editor {
+  height: 100%;
+  flex: 1;
+  overflow-y: auto;
+  width: 100%;
+}

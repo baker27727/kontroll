@@ -1,0 +1,60 @@
+const Routes = Object.freeze({
+    HOME: '/',
+    AUTH: Object.freeze({
+        LOGIN: '/login',
+    }),
+    PAGES: Object.freeze({
+        WORKSPACE: '/workspace',
+        USER_LOGINS: '/users/:id/logins',
+        DELETED_USERS: '/deleted-users',
+        USERS_LOGS: '/users-logs',
+        VIOLATIONS: '/violations',
+        VIOLATION_DETAILS: '/violations/:id',
+        EMPLOYEES: '/employees',
+        EMPLOYEE_PROFILE: '/employees/:id',
+        CREATE_EMPLOYEE: '/employees/create',
+        MAILBOX: '/mailbox',
+        CHATS: '/chats',
+        SETTINGS: '/settings',
+        POLICY: '/policy',
+        TERMS: '/terms',
+        PUBLIC_CARS: '/cars/public',
+        RESIDENTIAL_CARS: '/cars/residential',
+        RULES: '/rules',
+        PARTNERS: '/partners',
+        CAR_LOGS: '/car-logs',
+        CAR_LOG_REPORTS: '/car-logs/:id/reports',
+        PLACES: '/places',
+        PUBLIC_PLACES_DASHBOARDS: '/public-places/:id/dashboards',
+        REPORT_DASHBOARD: '/report-dashboard',
+        PLACES_REQUESTS: '/places/requests',
+        APARTMENTS_REQUESTS: '/apartments/requests',
+        MONITORING: Object.freeze({
+            ERROR_HANDLING: '/error-handling',
+            ANALYTICS: '/analytics',
+            AUDIT_LOGS: '/audit-logs',
+            VERSION_CONTROL: '/version-control',
+        }),
+        NOTIFICATIONS: Object.freeze({
+            INDEX: '/notifications',
+            MANAGEMENT: '/notifications/management',
+            ANALYTICS: '/notifications/analytics',
+        }),
+        RESIDENTIAL_NOTIFICATIONS: '/residential/:id/notification',
+        PUBLIC_PLACE_NOTIFICATIONS: '/public-place/:id/notification',
+        APARTMENT_NOTIFICATIONS: '/apartment/:id/notification',
+        APARTMENTS: '/apartments',
+    }),
+    ERRORS: Object.freeze({
+        NOT_FOUND: '/404',
+    }),
+
+    DASHBOARDS: Object.freeze({
+        PAYMENTS: '/dashboard/payments',
+        PAYMENT_DETAILS: '/dashboard/payments/:id',
+        PAYMENT_REPORTS: '/dashboard/payments/reports',
+        PAYMENT_SETTINGS: '/dashboard/payments/settings',
+    }),
+});
+
+export default Routes;
