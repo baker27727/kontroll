@@ -1,0 +1,1 @@
+enum AnnouncementSource { teacher, admin }

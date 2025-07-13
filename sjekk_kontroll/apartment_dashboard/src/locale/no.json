@@ -1,0 +1,156 @@
+{
+  "cars_page": {
+      "title": "Registrerte Biler",
+      "add_car": "Legg til Bil",
+      "car_limit_warning": "Du kan registrere opptil {{max}} biler. Du har registrert {{current}} bil(er).",
+      "no_cars_registered": "Ingen biler registrert",
+      "expires_in": "{{days}} dag{{days !== 1 ? 'er' : ''}} {{hours}}:{{minutes < 10 ? '0' : ''}}{{minutes}}:{{seconds < 10 ? '0' : ''}}{{seconds}}",
+      "delete_car_modal": {
+      "title": "Slett Bil",
+      "content": "Er du sikker på at du vil slette denne bilen?"
+      },
+      "add_car_modal": {
+      "title": "Legg til Ny Bil",
+      "car_number_label": "Bilnummer",
+      "car_number_placeholder": "Eksempel: ABC123",
+      "submit": "Legg til Bil"
+      },
+      "confirm_add_car_modal": {
+      "title": "Bekreft Legg til Bil",
+      "content": "Er du sikker på at du vil legge til bilen med skilt nummer {{plate_number}}?"
+      }
+  },
+
+  "earnings_page": {
+      "title": "Inntekter og Betalinger",
+      "current_earnings": "Nåværende Inntekter",
+      "monthly_payments": "Månedlige Betalinger",
+      "month_earnings": "{{month}}: {{amount}} NOK",
+      "amount": "{{amount}} NOK",
+      "months": {
+          "january": "Januar",
+          "february": "Februar",
+          "march": "Mars",
+          "jan": "Jan",
+          "feb": "Feb",
+          "mar": "Mar"
+      }
+  },
+
+  "home_dashboard": {
+      "welcome": "Velkommen, {{name}}",
+      "recent_activity": "Siste Aktivitet",
+      "expires_in": "Utløper om: {{days}}d {{hours}}t {{minutes}}m",
+      "view_all_cars": "Se alle biler →",
+      "your_cars": "Dine Biler",
+      "registered_cars": "Registrerte Biler",
+      "car_limit_reached": "Bilgrense nådd",
+      "manage_cars": "Administrer Biler →",
+      "shared_parking": {
+      "title": "Delt Parkering",
+      "location": "Blokk A, Plass 5",
+      "standby_time": "2 timer",
+      "rate": "{{rate}} NOK/t",
+      "current_rate": "Nåværende Pris",
+      "available": "Tilgjengelig",
+      "not_available": "Ikke Tilgjengelig",
+      "time_range": "{{from}} - {{to}}",
+      "manage_sharing_disabled": "Administrer Deling (Deaktivert)"
+      },
+      "quick_stats": {
+          "title": "Hurtigstatistikk",
+          "next_payment": "Neste Betaling",
+          "monthly_earnings": "Månedlige Inntekter",
+          "active_locations": "Aktive Lokasjoner"
+      },
+      "earnings_overview_disabled": "Inntektsoversikt (Deaktivert)",
+      "months": {
+          "jan": "Jan",
+          "feb": "Feb",
+          "mar": "Mar",
+          "apr": "Apr",
+          "may": "Mai",
+          "jun": "Jun"
+      }
+  },
+  "locations_page": {
+      "title": "Dine Lokasjoner",
+      "add_location": "Legg til Lokasjon",
+      "no_locations": "Ingen lokasjoner ennå",
+      "table": {
+          "code": "Kode",
+          "policy": "Policy",
+          "city": "By",
+          "area": "Område",
+          "status": "Status",
+          "actions": "Handlinger"
+      },
+      "status": {
+          "certified": "Sertifisert",
+          "in_review": "Til Gjennomgang"
+      },
+      "start_sharing": "Start Deling",
+      "stop_sharing": "Stopp Deling",
+      "add_location_modal": {
+          "title": "Legg til Ny Lokasjon",
+          "code": "Lokasjonskode",
+          "code_placeholder": "Skriv inn lokasjonskode",
+          "policy": "Policy",
+          "policy_placeholder": "Skriv inn policy",
+          "city": "By",
+          "city_placeholder": "Skriv inn by",
+          "area": "Område",
+          "area_placeholder": "Skriv inn område",
+          "submit": "Legg til Lokasjon"
+      }
+  },
+
+  "profile_page": {
+      "title": "Profilinformasjon",
+      "name": "Navn",
+      "apartment_number": "Leilighetsnummer",
+      "email": "E-post",
+      "change_password": "Endre Passord",
+      "logout": "Logg ut",
+      "password_change_success": "Passordet ble endret vellykket",
+      "password_change_success_description": "Ditt passord ble endret vellykket",
+      "password_change_error": "Kunne ikke endre passord",
+      "change_password_modal": {
+          "title": "Endre Passord",
+          "current_password": "Nåværende Passord",
+          "current_password_placeholder": "Skriv inn ditt nåværende passord",
+          "new_password": "Nytt Passord",
+          "new_password_placeholder": "Skriv inn ditt nye passord",
+          "submit": "Endre Passord"
+      }
+  },
+
+  "share_page": {
+      "title": "Del og Tjen",
+      "current_shared_parking": {
+          "title": "Nåværende Delt Parkering",
+          "location": "Lokasjon",
+          "location_value": "Blokk A, Plass 5",
+          "hourly_rate": "Timepris",
+          "rate_value": "{{rate}} NOK",
+          "availability": "Tilgjengelighet",
+          "available": "Tilgjengelig",
+          "not_available": "Ikke Tilgjengelig",
+          "standby_time": "Standby Tid",
+          "standby_time_value": "2 timer",
+          "available_hours": "Tilgjengelige Timer",
+          "time_range": "{{from}} - {{to}}"
+      },
+      "form": {
+          "location": "Lokasjon",
+          "location_placeholder": "Skriv inn lokasjon",
+          "hourly_rate": "Timepris (NOK)",
+          "hourly_rate_placeholder": "Skriv inn timepris",
+          "description": "Beskrivelse",
+          "description_placeholder": "Skriv inn beskrivelse",
+          "account_number": "Kontonummer",
+          "account_number_placeholder": "Skriv inn kontonummer",
+          "submit": "Send inn"
+      }
+  }
+}

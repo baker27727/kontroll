@@ -1,0 +1,1 @@
+enum CourseType { online, offline }

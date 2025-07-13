@@ -1,0 +1,251 @@
+{
+    "translations_information_v1": {
+        "status": "Under behandling",
+        "date": "13.08.2024"
+    },
+
+    "home_block": {
+        "dashboard": "Dashbord",
+        "overview_message": "Oversikt over styre dashbord",
+        "welcome": "Hei",
+        "registered_cars": "Registrerte biler",
+        "reserved_parkings": "Reserverte plasser",
+        "guests": "Gjester",
+        "revenue": "Inntekter"
+    },
+
+    "login_block": {
+        "login_success_title": "Innlogging vellykket",
+        "login_success_message": "Du har logget inn.",
+        "login_failure_title": "Innlogging mislyktes",
+        "dashboard_name": "Styre dashbord",
+
+        "form_fields": {
+            "access_username": "Brukernavn",
+            "enter_access_username": "Skriv inn brukernavnet ditt",
+            "access_code": "Tilgangskode",
+            "enter_access_code": "Skriv inn tilgangskoden din",
+
+            "login_button": "Logg inn"
+        }
+    },
+
+    "register_car_block": {
+        "parking_options": {
+            "reserved_parking": "Reservert parkering",
+            "guest_parking": "Gjesteparkering"
+        },
+
+        "expiration_durations": {
+            "three_days": "3 dager",
+            "one_week": "1 uke",
+            "one_month": "1 måned",
+            "one_year": "1 år",
+            "three_years": "3 år"
+        },
+
+        "car_registration_success_title": "Bilen er registrert",
+        "car_registration_success_message": "Du har registrert bilen din.",
+        "car_registration_failure_title": "Registrering mislyktes",
+
+        "register_new_car": "Registrer ny bil",
+        
+        "form_fields": {
+            "plate_number": "Registreringsnummer",
+            "plate_number_placeholder": "F.eks. \"ABC-1234\"",
+            "get_car_data": "Hent bilinsiformasjon",
+            "parking_type": "Parkeringstype",
+            "parking_expiration": "Utløpsdato for parkering",
+            "submit_button": "Registrer bil"
+        },
+
+        "car_data": {
+            "title": "Bilinformasjon",
+            "car_type": "Biltype",
+            "manufacture_year": "Produksjonsår",
+            "car_description": "Beskrivelse av bilen",
+            "car_model": "Bilmodell",
+            "car_color": "Bilfarge",
+
+            "no_data_available": "Ingen data tilgjengelig"
+        },
+
+        "registration_modal": {
+            "confirm_registration_title": "Bekreft registrering",
+            "confirm_registration_message": "Er du sikker på at du vil registrere denne bilen?",
+
+            "cancel_button": "Avbryt",
+            "confirm_button": "Bekreft"
+        }
+    },
+
+    "registered_cars_block": {
+        "parking_options": {
+            "reserved_parking": "Reservert parkering",
+            "guest_parking": "Gjesteparkering"
+        },
+
+        "delete_modal": {
+            "confirm_delete_title": "Bekreft sletting",
+            "confirm_delete_message": "Er du sikker på at du vil slette denne bilen?",
+            "cancel_button": "Avbryt",
+            "confirm_button": "Slett"
+        },
+
+        "renew_car_registration_modal": {
+            "renew_car_registration": "Forny bilregistrering",
+            "parking_type": "Parkeringstype",
+            "new_expiration_date": "Ny utløpsdato",
+
+            "note_title": "Merk",
+            "note_message": "Hvis du endrer parkeringstype, vil utløpsdatoen bli nullstilt til dagens dato.",
+
+            "cancel_button": "Avbryt",
+            "confirm_button": "Forny"
+        },
+
+        "edit_car_modal": {
+            "edit_car_registration": "Rediger bilregistrering",
+            "parking_type": "Parkeringstype",
+            "expiration_date": "Utløpsdato",
+
+            "cancel_button": "Avbryt",
+            "confirm_button": "Rediger"
+        },
+
+        "car_deletion_success_title": "Bilen ble slettet",
+        "car_deletion_success_message": "Du har slettet bilen din.",
+        "car_deletion_failure_title": "Sletting mislyktes",
+        "car_deletion_failure_message": "Kunne ikke slette bilen. Vennligst prøv igjen senere.",
+
+        "tabs": {
+            "long_term_cars": "Langtidsparkering",
+            "guest_cars": "Gjesteparkering"
+        },
+
+        "registered_cars": "Registrerte biler",
+        "manage_registered_cars": "Administrer registrerte biler",
+        "welcome": "Velkommen",
+        "search": "Søk",
+        "registered_cars_count": "Registrerte biler",
+        "register_car": "Registrer bil",
+        
+        "table_columns": {
+            "plate_number": "Registreringsnummer",
+            "registration_date": "Registreringsdato",
+            "expiration_date": "Utløpsdato",
+            "time_left": "Gjenstående tid",
+            "parking_type": "Parkeringstype",
+            "actions": "Handlinger"
+        },
+
+        "reserved": "Reservert",
+        "guest": "Gjest",
+
+        "actions_buttons": {
+            "renew": "Forny",
+            "edit": "Rediger",
+            "delete": "Slett"
+        },
+
+        "pagination_message": "Viser {{from}} til {{to}} av {{total}} oppføringer",
+        "previous_button": "Forrige",
+        "next_button": "Neste"
+    },
+
+    "v2": "7-10-2024",
+"apartment_register": {
+    "image_alt": "Moderne leilighetsbygning",
+    "logo_alt": "Logo",
+    "title": "Registrering for Leilighetseiere",
+    "note": "Få tilgang til ditt personlige leilighetsdashbord på",
+    "note_continuation": ". Hold oversikt over kontoen din, betalinger og vedlikeholdsforespørsler, alt på ett sted!",
+    "form": {
+        "owner_name": "Eierens Navn",
+        "owner_name_placeholder": "Skriv inn eierens navn",
+        "username": "Brukernavn",
+        "username_placeholder": "Skriv inn et unikt brukernavn",
+        "email": "E-post",
+        "email_placeholder": "m@example.com",
+        "apartment_number": "Leilighetsnummer",
+        "apartment_number_placeholder": "Skriv inn leilighetsnummer",
+        "building_number": "Bygningsnummer",
+        "building_number_placeholder": "Skriv inn bygningsnummer",
+        "floor_number": "Etasjenummer",
+        "floor_number_placeholder": "Skriv inn etasjenummer",
+        "password": "Passord",
+        "password_placeholder": "Skriv inn ditt passord",
+        "confirm_password": "Bekreft Passord",
+        "confirm_password_placeholder": "Bekreft ditt passord",
+        "submit": "Registrer"
+    },
+    "confirmation_modal": {
+        "title": "Bekreftelse på Registrering",
+        "content": "Sørg for at all informasjon er riktig før du fortsetter."
+    },
+    "notifications": {
+        "success": {
+            "message": "Registrering Vellykket",
+            "description": "Kontoen din har blitt opprettet vellykket. Vennligst logg inn på kontoen din."
+        },
+        "error": {
+            "message": "Registrering Mislyktes"
+        }
+    }
+},
+
+"apartment_requests": {
+    "card_title": "Leilighetsregistreringsforespørsler",
+    "table": {
+        "empty_message": "Ingen leilighetsforespørsler funnet",
+        "columns": {
+            "owner_name": "Eierens Navn",
+            "apartment_number": "Leilighetsnummer",
+            "email": "E-post",
+            "username": "Brukernavn",
+            "created_at": "Opprettet Den"
+        }
+    },
+    "accept_modal": {
+        "title": "Godta Forespørsel",
+        "content": "Er du sikker på at du vil godta denne forespørselen?"
+    },
+    "reject_modal": {
+        "title": "Avvis Forespørsel",
+        "content": "Er du sikker på at du vil avvise denne forespørselen?"
+    },
+    "notifications": {
+        "accept": {
+            "success": {
+                "message": "Forespørsel Godtatt",
+                "description": "Forespørselen ble godkjent vellykket"
+            },
+            "error": {
+                "message": "Kunne ikke Godkjenne Forespørsel"
+            }
+        },
+        "reject": {
+            "success": {
+                "message": "Forespørsel Avvist",
+                "description": "Forespørselen ble avvist vellykket"
+            },
+            "error": {
+                "message": "Kunne ikke Avvise Forespørsel"
+            }
+        }
+    }
+},
+
+"apartments": {
+    "card_title": "Leiligheter",
+    "table": {
+        "columns": {
+            "apartment_number": "Leilighetsnummer",
+            "owner_name": "Eierens Navn",
+            "email": "E-post",
+            "username": "Brukernavn",
+            "created_at": "Opprettet Den"
+        }
+    }
+}
+}

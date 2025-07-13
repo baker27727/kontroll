@@ -1,0 +1,134 @@
+{
+    "ticket_information": "Ticket Information",
+
+    "action_success": "Action was successfully executed",
+    "error": "Error",
+    "complaint_id": "Complaint ID",
+    "personal_information": "Personal Information",
+
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "postal_code": "Postal Code",
+    "city": "City",
+    "country": "Country",
+    "complaint_information": "Complaint Information",
+    "attachments": "Attachments",
+    "enter_message": "Enter Message",
+
+    "complete": "Complete",
+    "reject": "Reject",
+    "delete": "Delete",
+
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page",
+    "of": "Of",
+
+    "complaint_delete_success": "Complaint was successfully deleted",
+    "complaint_delete_error": "Error deleting complaint",
+
+    "complaints": "Complaints",
+
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "created_at": "Created At",
+    
+    "status": "Status",
+
+    "pending": "Pending",
+    "rejected": "Rejected",
+    "completed": "Completed",
+    "deleted": "Deleted",
+
+    "filter": "Filter",
+    "actions": "Actions",
+    "read": "Read",
+    "title": "Title",
+    "no_complaints": "No complaints available.",
+
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December",
+
+    "total_complaints": "Total Complaints",
+    "pending_complaints": "Pending Complaints",
+    "resolved_complaints": "Resolved Complaints",
+    "total_users": "Total Users",
+
+    "statistics_overview": "Statistics Overview",
+    "admin_information": "Admin Information",
+    "welcome_admin_message": "Welcome Admin",
+    "admin_welcome": "Welcome, Admin! This dashboard provides an overview of statistics and information.",
+    "second_admin_welcome": "Use the navigation menu to explore different sections of the dashboard.",
+    "announcements": "Announcements",
+    "announcements_message": "Stay informed with the latest announcements and updates.",
+    "view_complaints": "View Complaints",
+    "view_analytics": "View Analytics",
+
+    "username": "Username",
+    "required_username": "Please enter your username!",
+    "password": "Password",
+    "required_password": "Please enter your password!",
+    "login": "Log in",
+
+    "submit": "Submit",
+
+    "back_home": "Back Home",
+    "website_doesnt_exist": "Website does not exist",
+
+    "language_changed": "Language changed successfully",
+    "change_language": "Change language",
+    "notifications_enabled": "Notifications enabled",
+    "notifications_disabled": "Notifications disabled",
+
+    "theme_changed": "Theme changed successfully",
+    "select_theme": "Select theme",
+
+    "font_changed": "Font size changed successfully",
+    "set_defaults": "Settings reset to default",
+
+    "toggle_notifications": "Toggle notifications",
+    "light": "Light",
+    "dark": "Dark",
+    "adjust_font_size": "Adjust font size",
+
+    "reset_to_defaults": "Reset to defaults",
+
+    "settings": "Settings",
+
+    "notification_received": "New Notification received",
+    "complaint_update": "Complaint Update",
+    "notifications": "Notifications",
+
+    "home": "Home",
+    "logout": "Logout",
+
+    "dashboard": "Dashboard",
+    "car_information": "Car Information",
+    "plate_number": "plate number",
+    "brand": "Brand",
+    "year": "Year",
+    "description": "Description",
+    "type": "Type",
+    "color": "Color",
+    "completed_at": "Completed At",
+    "system_comment": "Note For Admin",
+    "client_comment": "Note For Client",
+    "place": "Place",
+    "ticket_number": "ticket number",
+    "created_by": "Created By",
+    "delivered_by": "Delivery By",
+    "serial_number": "Serial Number",
+    "serial_image": "Serial Image"
+}

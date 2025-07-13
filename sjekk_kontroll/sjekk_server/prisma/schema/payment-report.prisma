@@ -1,0 +1,22 @@
+model PaymentReportMetadata {
+    id Int @id @default(autoincrement())
+
+    payment_report_id Int? @unique
+    payment_report PaymentReport? @relation(fields: [payment_report_id], references: [id])
+
+    generated_by String
+    start_date String
+    end_date String
+
+    statistics Json
+}
+
+model PaymentReport {
+    id Int @id @default(autoincrement())
+
+    report_name String
+    report_path String
+
+    metadata PaymentReportMetadata?
+    created_at String
+}

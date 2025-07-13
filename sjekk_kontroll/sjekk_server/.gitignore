@@ -1,0 +1,13 @@
+node_modules
+.env
+
+development.js
+
+tests
+
+**/**.d.ts
+
+typings
+typings.json
+
+logs

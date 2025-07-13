@@ -1,0 +1,263 @@
+{
+    "translations_information_v1": {
+        "status": "In process",
+        "date": "13-8-2024"
+    },
+
+    "components":{
+        "navbar": {
+            "cars": "Cars",
+            "register": "Register",
+            "apartments": "Apartments",
+            "requests": "Requests",
+            "logout": "Logout"
+        },
+
+        "footer": "Gensolv Company © 2024 All Rights Reserved"
+    },
+
+    "home_block": {
+        "dashboard": "Dashboard",
+        "overview_message": "Overview of the apartment management system",
+        "welcome": "Welcome, {{name}}",
+        "registered_cars": "Registered cars",
+        "reserved_parkings": "Reserved parkings",
+        "guests": "Guests",
+        "revenue": "Revenue"
+    },
+
+    "login_block": {
+        "login_success_title": "Login successful",
+        "login_success_message": "You have successfully logged in.",
+        "login_failure_title": "Login failed",
+        "dashboard_name": "Residential Quarter Dashboard",
+
+        "form_fields": {
+            "access_username": "Access username",
+            "enter_access_username": "Enter your access username",
+            "access_code": "Access code",
+            "enter_access_code": "Enter your access code",
+
+            "login_button": "Login"
+        }
+    },
+
+    "register_car_block": {
+        "parking_options": {
+            "reserved_parking": "Reserved parking",
+            "guest_parking": "Guest parking"
+        },
+
+        "expiration_durations": {
+            "three_days": "3 days",
+            "one_week": "1 week",
+            "one_month": "1 month",
+            "one_year": "1 year",
+            "three_years": "3 years"
+        },
+
+        "car_registration_success_title": "Car registration successful",
+        "car_registration_success_message": "You have successfully registered your car.",
+        "car_registration_failure_title": "Car registration failed",
+
+        "register_new_car": "Register new car",
+        
+        "form_fields": {
+            "plate_number": "Plate number",
+            "plate_number_placeholder": "Ex: \"ABC-1234\"",
+            "get_car_data": "Get car data",
+            "parking_type": "Parking type",
+            "parking_expiration": "Parking expiration",
+            "submit_button": "Register Car"
+        },
+
+        "car_data": {
+            "title": "Car information",
+            "car_type": "Car type",
+            "manufacture_year": "Manufacture year",
+            "car_description": "Car description",
+            "car_model": "Car model",
+            "car_color": "Car color",
+
+            "no_data_available": "No data available"
+        },
+
+        "registration_modal": {
+            "confirm_registration_title": "Confirm registration",
+            "confirm_registration_message": "Are you sure you want to register this car?",
+
+            "cancel_button": "Cancel",
+            "confirm_button": "Confirm"
+        }
+
+    },
+
+    "registered_cars_block": {
+        "parking_options": {
+            "reserved_parking": "Reserved parking",
+            "guest_parking": "Guest parking"
+        },
+
+        "delete_modal": {
+            "confirm_delete_title": "Confirm deletion",
+            "confirm_delete_message": "Are you sure you want to delete this car?",
+            "cancel_button": "Cancel",
+            "confirm_button": "Delete"
+        },
+
+        "renew_car_registration_modal": {
+            "renew_car_registration": "Renew car registration",
+            "parking_type": "Parking type",
+            "new_expiration_date": "New expiration date",
+
+            "note_title": "Note",
+            "note_message": "If you change the parking type, the expiration date will be reset to the current date.",
+
+            "cancel_button": "Cancel",
+            "confirm_button": "Renew"
+        },
+
+        "edit_car_modal": {
+            "edit_car_registration": "Edit car Registration",
+            "parking_type": "Parking type",
+            "expiration_date": "Expiration date",
+
+            "cancel_button": "Cancel",
+            "confirm_button": "Edit"
+        },
+
+        "car_deletion_success_title": "Car deletion successful",
+        "car_deletion_success_message": "You have successfully deleted your car.",
+        "car_deletion_failure_title": "Car deletion failed",
+        "car_deletion_failure_message": "Failed to delete car. Please try again later.",
+
+        "tabs": {
+            "long_term_cars": "Long term Cars",
+            "guest_cars": "Guest Cars"
+        },
+
+        "registered_cars": "Registered cars",
+        "manage_registered_cars": "Manage registered cars",
+        "welcome": "Welcome",
+        "search": "Search",
+        "registered_cars_count": "Registered cars",
+        "register_car": "Register car",
+        "table_columns": {
+            "plate_number": "Plate number",
+            "registration_date": "Registration date",
+            "expiration_date": "Expiration date",
+            "time_left": "Time left",
+            "parking_type": "Parking type",
+            "actions": "Actions"
+        },
+
+        "reserved": "Reserved",
+        "guest": "Guest",
+
+        "actions_buttons": {
+            "renew": "Renew",
+            "edit": "Edit",
+            "delete": "Delete"
+        },
+
+        "pagination_message": "Showing {{from}} to {{to}} of {{total}} entries",
+        "previous_button": "Previous",
+        "next_button": "Next"
+    },
+
+    "v2": "7-10-2024",
+    "apartment_register": {
+        "image_alt": "Modern apartment building",
+        "logo_alt": "Logo",
+        "title": "Apartment Owner Registration",
+        "note": "Access your personalized apartment dashboard at",
+        "note_continuation": ". Keep track of your account, payments, and maintenance requests all in one place!",
+        "form": {
+            "owner_name": "Owner Name",
+            "owner_name_placeholder": "Enter owner name",
+            "username": "Username",
+            "username_placeholder": "Enter a unique username",
+            "email": "Email",
+            "email_placeholder": "m@example.com",
+            "apartment_number": "Apartment Number",
+            "apartment_number_placeholder": "Enter apartment number",
+            "building_number": "Building Number",
+            "building_number_placeholder": "Enter building number",
+            "floor_number": "Floor Number",
+            "floor_number_placeholder": "Enter floor number",
+            "password": "Password",
+            "password_placeholder": "Enter your password",
+            "confirm_password": "Confirm Password",
+            "confirm_password_placeholder": "Confirm your password",
+            "submit": "Register"
+        },
+        "confirmation_modal": {
+            "title": "Registration Confirmation",
+            "content": "Make sure all the information is correct before proceeding."
+        },
+        "notifications": {
+            "success": {
+                "message": "Registration Successful",
+                "description": "Your account has been created successfully. Please login to your account."
+            },
+            "error": {
+                "message": "Registration Failed"
+            }
+        }
+    },
+
+    "apartment_requests": {
+        "card_title": "Apartment Registration Requests",
+        "table": {
+            "empty_message": "No Apartment Requests Found",
+            "columns": {
+                "owner_name": "Owner Name",
+                "apartment_number": "Apartment Number",
+                "email": "Email",
+                "username": "Username",
+                "created_at": "Created At"
+            }
+        },
+        "accept_modal": {
+            "title": "Accept Request",
+            "content": "Are you sure you want to accept this request?"
+        },
+        "reject_modal": {
+            "title": "Reject Request",
+            "content": "Are you sure you want to reject this request?"
+        },
+        "notifications": {
+            "accept": {
+                "success": {
+                    "message": "Request Accepted",
+                    "description": "Request Accepted Successfully"
+                },
+                "error": {
+                    "message": "Request Accept Failed"
+                }
+            },
+            "reject": {
+                "success": {
+                    "message": "Request Rejected",
+                    "description": "Request Rejected Successfully"
+                },
+                "error": {
+                    "message": "Request Reject Failed"
+                }
+            }
+        }
+    },
+
+    "apartments": {
+        "card_title": "Apartments",
+        "table": {
+            "columns": {
+                "apartment_number": "Apartment Number",
+                "owner_name": "Owner Name",
+                "email": "Email",
+                "username": "Username",
+                "created_at": "Created At"
+            }
+        }
+    }
+}

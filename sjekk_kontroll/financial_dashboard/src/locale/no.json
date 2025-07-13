@@ -1,0 +1,356 @@
+{
+    "translations_information_v1": {
+        "status": "Under behandling",
+        "date": "13-08-2024"
+    },
+    
+    "attachments_block": {
+        "file_upload": "Last opp fil",
+        "upload_files_success": "Filene ble lastet opp",
+        "upload_files_failure": "Kunne ikke laste opp filene",
+        "remove": "Fjern",
+        "attachments": "Vedlegg",
+        "upload_attachments": "Last opp og administrer vedlegg",
+        "control_number": "Kontrollnummer",
+        "upload_file_button": "Last opp fil",
+        "save_button": "Lagre",
+        "uploaded_files": "Opplastede filer",
+        "no_files_uploaded": "Ingen filer lastet opp",
+        "save_new_attachments_question_title": "Lagre nytt vedlegg?",
+        "save_new_attachments_question_content": "Er du sikker på at du vil lagre disse vedleggene?",
+        "cancel_button": "Avbryt",
+        "ok_button": "OKEI"
+    },
+
+    "home_block": {
+        "financial_dashboard": "Økonomi Dashbord",
+        "welcome_message": "Velkommen til administrasjonspanelet",
+        "login_time": "Innloggingstidspunkt {{login_time}}",
+        "logout_button": "Logg ut",
+        "navigation_boxes": {
+            "sanctions": "K.Sanksjoner",
+            "manage_sanctions_message": "Administrer og gjennomgå alle sanksjoner knyttet til finansielle transaksjoner.",
+            "view_sanctions_button": "Vis K.sanksjoner",
+            "attachments": "Vedlegg",
+            "manage_attachments_message": "Se og administrer alle vedlegg knyttet til finansielle transaksjoner.",
+            "view_attachments_button": "Vis vedlegg",
+            "accounting": "Regnskap",
+            "manage_accounting_message": "Hold oversikt over alle regnskapsoppføringer og finansielle poster.",
+            "view_accounting_button": "Vis regnskap",
+            "statistics": "Statistikk",
+            "manage_statistics_message": "Analyser finansielle data og se statistikker.",
+            "view_statistics_button": "Vis statistikk",
+            "reports": "Rapporter",
+            "manage_reports_message": "Generer og gjennomgå finansielle rapporter.",
+            "view_reports_button": "Vis rapporter",
+            "other_features": "Andre funksjoner",
+            "manage_other_features_message": "Utforsk flere funksjoner og verktøy.",
+            "view_other_features_button": "Vis funksjoner"
+        }
+    },
+
+    "login_block": {
+        "login_success_title": "Innlogging vellykket",
+        "login_success_message": "Du har logget inn.",
+        "login_failed_title": "Innlogging mislyktes",
+        "financial_dashboard": "Økonomi Dashbord",
+
+        "form_fields": {
+            "username": "Brukernavn",
+            "enter_username": "Skriv inn brukernavnet ditt",
+            "password": "Passord",
+            "enter_password": "Skriv inn passordet ditt",
+            "login_button": "Logg inn"
+        },
+
+        "trying_to_login": "Prøver å logge inn..."
+    },
+
+    "managers_block": {
+        "manager_deleted_title": "Leder slettet",
+        "manager_deleted_message": "Lederen ble slettet.",
+        "delete_failed_title": "Sletting mislyktes",
+        "delete_failed_message": "Kunne ikke slette lederen.",
+        "managers": "Ledere",
+        "manage_managers_message": "Se og administrer alle ledere.",
+        "add_manager_button": "Legg til leder",
+        "table_headers": {
+            "id": "ID",
+            "name": "Navn",
+            "username": "Brukernavn",
+            "linked_email": "Tilknyttet e-post",
+            "last_login_time": "Siste innloggingstid",
+            "created_at": "Opprettet",
+            "role": "Rolle",
+            "actions": "Handlinger"
+        },
+        "pagination_message": "Viser {{from}} til {{to}} av {{total}} oppføringer",
+        "previous_button": "Forrige",
+        "next_button": "Neste",
+        "delete_confirmation_title": "Bekreft sletting",
+        "delete_confirmation_message": "Er du sikker på at du vil slette denne lederen?",
+        "cancel_button": "Avbryt",
+        "ok_button": "OKEI",
+
+        "logins_block": {
+            "manager_logins": "Lederinnlogginger",
+            "login_history": "Innloggingshistorikk for lederen",
+            "login_time": "Innloggingstid",
+            "ip_address": "IP-adresse",
+            "hostname": "Vertsnavn",
+            "pagination_message": "Viser {{from}} til {{to}} av {{total}} oppføringer",
+            "previous_button": "Forrige",
+            "next_button": "Neste"
+        },
+
+        "create_manager_block": {
+            "roles": {
+                "supervisor": "Veileder",
+                "viewer": "Viser"
+            },
+
+            "authorizations": {
+                "manage_users": "Administrer brukere",
+                "view_reports": "Vis rapporter",
+                "edit_content": "Rediger innhold",
+                "manage_inventory": "Administrer inventar"
+            },
+
+            "password_mismatch_title": "Passordene stemmer ikke",
+            "password_mismatch_message": "Passordene du oppga stemmer ikke.",
+
+            "manager_created_title": "Leder opprettet",
+            "manager_created_message": "Lederen ble opprettet.",
+
+            "manager_creation_failed_title": "Oppretting mislyktes",
+            "manager_creation_failed_message": "Kunne ikke opprette lederen.",
+
+            "create_manager": "Opprett leder",
+            
+            "form_fields": {
+                "name": "Navn",
+                "enter_name": "Skriv inn navnet ditt",
+                "username": "Brukernavn",
+                "enter_username": "Skriv inn brukernavnet ditt",
+                "email": "E-post",
+                "enter_email": "Skriv inn e-posten din",
+                "password": "Passord",
+                "enter_password": "Skriv inn passordet ditt",
+                "confirm_password": "Bekreft passord",
+                "enter_confirm_password": "Skriv inn passordet ditt igjen",
+                "role": "Rolle",
+                "authorizations": "Autorisasjoner",
+                "submit_button": "Opprett leder"
+            }
+        },
+
+        "edit_manager_block": {
+            "manager_updated_title": "Leder oppdatert",
+            "manager_updated_message": "Lederen ble oppdatert.",
+
+            "manager_update_failed_title": "Oppdatering mislyktes",
+            "manager_update_failed_message": "Kunne ikke oppdatere lederen.",
+
+            "edit_manager": "Rediger leder",
+            "update_manager_details": "Oppdater lederens detaljer",
+
+            "roles": {
+                "admin": "Admin",
+                "supervisor": "Veileder",
+                "viewer": "Viser"
+            },
+
+            "form_fields": {
+                "name": "Navn",
+                "enter_name": "Skriv inn navnet ditt",
+                "username": "Brukernavn",
+                "enter_username": "Skriv inn brukernavnet ditt",
+                "email": "E-post",
+                "enter_email": "Skriv inn e-posten din",
+                "role": "Rolle",
+                "submit_button": "Oppdater leder"
+            }
+        }
+    },
+
+    "reports_block": {
+        "report_created_title": "Rapport opprettet",
+        "report_created_message": "Rapporten ble opprettet.",
+
+        "report_creation_failed_title": "Oppretting mislyktes",
+        "report_creation_failed_message": "Kunne ikke opprette rapporten.",
+
+        "reports_and_finances": "Rapporter og økonomi",
+        "view_finances_and_reports": "Se detaljerte økonomirapporter og statistikker",
+
+        "start_date": "Startdato",
+        "end_date": "Sluttdato",
+
+        "report_title": "Rapporttittel",
+        "create_report_button": "Opprett rapport",
+
+        "total_revenue": "Total inntekt",
+        "tax_deducted": "Trukket skatt (18%)",
+        "net_revenue": "Netto inntekt",
+
+        "detailed_report": "Detaljert rapport",
+        "report_name": "Rapportnavn",
+        "created_at": "Opprettet",
+        "actions": "Handlinger",
+        "view_pdf": "Vis PDF",
+
+        "pdf_viewer": "PDF-visning",
+        "close_pdf_viewer": "Lukk PDF-visning"
+    },
+
+    "sanctions_block": {
+        "collect_debt_title": "Inkassoinnkreving",
+        "collect_debt_message": "Innkrev gjeld for valgt K.sanksjon",
+
+        "collect_debt_failure_title": "Kunne ikke innkreve gjeld for valgt K.sanksjon",
+        "mark_as_paid_title": "Merk som betalt",
+        "mark_as_paid_message": "Betaling er fullført",
+
+        "collect_debt_failure_message": "Kunne ikke merke som betalt",
+
+        "send_to_debt_collect_title": "Send til inkassoinnkreving",
+        "send_to_debt_collect_message": "Sender til inkassoinnkreving for valgt K.sanksjon",
+
+        "send_to_debt_collect_failure_title": "Kunne ikke sende til inkassoinnkreving for valgt sanksjon",
+
+        "sanctions": "K.Sanksjoner",
+        "manage_sanctions": "Administrer og gjennomgå alle sanksjonsrelaterte aktiviteter",
+        "search": "Søk",
+
+        "see_deleted_sanctions_button": "Se slettede K.sanksjoner",
+        
+        "table_headers": {
+            "control_number": "Kontrollnummer",
+            "kid_number": "KID-nummer",
+            "pnid": "PSID",
+            "due_date": "Forfallsdato",
+            "amount": "Beløp",
+            "status": "Status",
+            "actions": "Handlinger"
+        },
+
+        "no_sanctions_found": "Ingen K.sanksjoner funnet",
+        "actions_buttons": {
+            "collect_debt": "Inkassoinnkreving",
+            "details": "Detaljer",
+            "invoice": "Faktura",
+            "delete": "Slett"
+        },
+
+        "pagination_message": "Viser {{from}} til {{to}} av {{total}} oppføringer",
+        "previous_button": "Forrige",
+        "next_button": "Neste",
+
+        "collect_debt_modal": {
+            "collect_debt_confirmation_title": "Bekreft innkreving av inkasso",
+            "collect_debt_confirmation_message": "Er du sikker på at du vil innkreve inkasso?",
+
+            "cancel_button": "Avbryt",
+            "ok_button": "OKEI"
+        },
+
+        "delete_sanction_modal": {
+            "delete_confirmation_title": "Bekreft sletting",
+            "delete_confirmation_message": "Er du sikker på at du vil slette denne K.sanksjonen?",
+
+            "cancel_button": "Avbryt",
+            "ok_button": "OKEI"
+        },
+
+        "invoice_modal": {
+            "control_number": "Kontrollnummer",
+            "kid_number": "KID-nummer",
+            "pnid": "PSID",
+            "due_date": "Forfallsdato",
+            "total_charge": "Total kostnad",
+            "rules": "Regler"
+        },
+
+        "sanction_details_block": {
+            "paid": "Betalt",
+            "not_paid": "Ikke betalt",
+            "sent_to_debt_collect": "Sendt til inkassoinnkreving",
+
+            "sanction_details": "K.Sanksjonsdetaljer",
+            "case_number": "Saksnummer",
+            "employee_number": "Ansattnummer",
+            "due_date": "Forfallsdato",
+            "amount": "Beløp",
+            "invoice_report": "Fakturrapport",
+            "client_name": "Kundenavn",
+            "address": "Adresse ",
+            "violation_number": "Bruddsnummer",
+            "rule": "Regel",
+            "charge": "Avgift",
+            "total_charge": "Total kostnad",
+            "case_files": "Saksfiler",
+            "add_files_button": "Legg til filer",
+            "no_files_found": "Ingen filer funnet",
+
+            "payment_details": "Betalingsdetaljer",
+            "no_payment_available": "Ingen betaling tilgjengelig",
+            "client_name_payment": "Kundenavn",
+            "plate_number": "Registreringsnummer",
+            "charged_at": "Belastet",
+            "paid_at": "Betalt",
+            "paid_amount": "Betalt beløp",
+            "control_number": "Kontrollnummer"
+        },
+
+        "deleted_sanctions_block": {
+            "deleted_sanctions": "Slettede K.sanksjoner",
+            "manage_deleted_sanctions": "Administrer og gjennomgå alle slettede sanksjonsrelaterte aktiviteter",
+            "search": "Søk",
+            "table_headers": {
+                "control_number": "Kontrollnummer",
+                "kid": "KID",
+                "pnid": "PSID",
+                "due_date": "Forfallsdato",
+                "amount": "Beløp",
+                "actions": "Handlinger"
+            },
+
+            "no_deleted_sanctions_found": "Ingen slettede K.sanksjoner funnet",
+            "restore_button": "Gjenopprett",
+            "invoice": "Faktura",
+
+            "pagination_message": "Viser {{from}} til {{to}} av {{total}} oppføringer",
+            "previous_button": "Forrige",
+            "next_button": "Neste",
+
+            "restore_modal":{
+                "restore_confirmation_title": "Bekreft gjenoppretting",
+                "restore_confirmation_message": "Er du sikker på at du vil gjenopprette denne slettede K.sanksjonen?",
+                "cancel_button": "Avbryt",
+                "ok_button": "OKEI"
+            },
+
+            "invoice_modal": {
+                "control_number": "Kontrollnummer",
+                "kid_number": "KID-nummer",
+                "pnid": "PSID",
+                "due_date": "Forfallsdato",
+                "total_charge": "Total kostnad",
+                "rules": "Regler"
+            }
+        }
+    },
+
+    "statistics_block": {
+        "paid_sanctions": "Betalte K.sanksjoner",
+        "unpaid_sanctions": "Ubetalte K.sanksjoner",
+        "statistics": "Statistikk",
+        "analyze_finances": "Analyser økonomiske ytelse over tid",
+        "start_date": "Startdato",
+        "end_date": "Sluttdato",
+        "total_sanctions": "Totalt K.sanksjoner",
+        "total_paid_sanctions": "Totalt betalte K.sanksjoner",
+        "total_unpaid_sanctions": "Totalt ubetalte K.sanksjoner",
+        "total_deleted_sanctions": "Totalt slettede K.sanksjoner"
+    }
+}

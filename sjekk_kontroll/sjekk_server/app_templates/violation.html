@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontrollsanksjon</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+        body {
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding-top: 20px; /* Extra padding to ensure nothing gets cut off at the top */
+        }
+
+        .container {
+            width: 350px;
+            background-color: #f2d35c;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #000;
+        }
+
+        header p {
+            font-size: 18px;
+            font-weight:400;
+            text-align: center;
+            margin: 0;
+        }
+
+        h2 {
+            text-align: left;
+            margin: 10px 0;
+            font-weight: 400;
+            padding-bottom: 5px;
+            font-size: 40px !important;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: black;
+        }
+
+        .info-section {
+            margin: 15px 0;
+        }
+
+        .info-section h2 {
+            margin-bottom: 5px;
+            font-size: 32px !important;
+        }
+
+        .info-section div {
+            margin-bottom: 8px;
+        }
+
+        .info-section p {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .info-section a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .info-section a:hover {
+            text-decoration: underline;
+        }
+
+        .rules {
+            font-size: 18px;
+        }
+
+        .img {
+            mix-blend-mode: multiply;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="http://localhost:3000/public/images/parksync.png" alt="" width="100%">
+            <img src="{{barcode_image}}" alt="" width="100%" >
+            <p><strong>Org. nr:</strong> 933 521 796</p>
+        </header>
+        
+        <hr> 
+
+        <div
+            style="display: flex; justify-content: center;"
+        >
+        <h2 style="font-weight: bold;">Kontrollsanksjon</h2>
+        </div>
+        <hr>
+
+        <p><strong>Sanksjonsnummer:</strong> {{ticket_number}}</p>
+
+        <div class="info-section">
+            <h2>Notat</h2>
+            <p>{{ticket_comment}}</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Info</h2>
+            <p>Fra: {{place_login_time}}</p>
+            <p>Til: {{to_date}}</p>
+            <p>Levert: {{print_option}}</p>
+            <p>Betijent: {{pnid}}</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Overtredelse</h2>
+            <div class="rules">
+                {{#each rules}}
+                    <p>{{name}} ({{charge}} Kr)</p>
+                {{/each}}
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>Kjøretøy</h2>
+            <p><strong>Land:</strong> {{car_info.country_name}} - {{car_info.country_code}}</p>
+            <p><strong>Merke:</strong> {{car_info.car_model}}</p>
+            <p><strong>Skilt:</strong> {{car_info.plate_number}}</p>
+            <p><strong>Type:</strong> {{car_info.car_type}}</p>
+            <p><strong>Farge:</strong> {{car_info.car_color}}</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Sted</h2>
+            <p>{{location}}</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Billettinformasjon</h2>
+            <p><strong>Total:</strong> {{ticket_info.total_charge}} Kr</p>
+            <p><strong>Betales til:</strong> Parksync AS </p>
+            <p><strong>Konto:</strong> {{ticket_info.account_number}}</p>
+            <p><strong>KID:</strong> {{ticket_info.kid_number}}</p>
+            <p><strong>Dato:</strong> {{ticket_info.payment_date}}</p>
+            <p><strong>IBAN:</strong> {{ticket_info.iban_number}}</p>
+            <p><strong>SWIFT:</strong> {{ticket_info.swift_code}}</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Hjemmel for håndheving</h2>
+            <p>Kontrollsanksjoner er utstedt med hjemmel i parkeringsforskriften (p.forskr.) § 36 for parkering i strid med skilt eller forskriftsbestemmelse slik angitt overtredelsessak(e).</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Betalingsansvar</h2>
+            <p>Betalingsfristen er 3 uker fra datoen sanksjonen ble utstedt. Både eieren og føreren av kjøretøyet er felles ansvarlige for å betale kontrollsanksjonen, i henhold til Forskrift om vilkårsparkering av 18. mars 2016 nr. 260 § 37. Inndrivelse vil bli gjennomført i samsvar med inkassoloven og lov om tvangsfullbyrdelse.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Klage</h2>
+            <p>Klagefristen er 3 uker fra datoen sanksjonen ble utstedt. Både eieren og føreren, eller en person med fullmakt fra disse, har rett til å klage på sanksjonen, i henhold til parkeringsforskriften § 44. Klagen må være begrunnet og inneholde navn, adresse, sanksjonsnummer, og registreringsnummer på kjøretøyet.</p>
+        </div>
+
+        <div class="info-section">
+            <p>For mer informasjon om sanksjonen og for å registrere en klage elektronisk, besøk <a href="parksync.no">www.parksync.no  </a>  eller bruk QR-koden nederst.</p> <br> Vakt telefon 21 45 64 56
+        </div>
+
+        <footer>
+            <p>Parksync AS, Jacobine Ryes vei, 0987 Oslo</p>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="{{host}}{{qrcode_image}}" alt="QR-kode" class="img" height="340" width="340">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+{
+    "ticket_information": "Kontrollsanksjon",
+    "ticket_information_description": "Vis detaljer om din kontrollsanksjon.",
+    "ticket_number": "Kontrollsanksjon-nummer",
+
+    "car_images": "Bilder av bilen",
+    "car_images_description": "Vis bilder relatert til din kontrollsanksjon.",
+
+    "complaint": "Klage",
+    "complaint_description": "Send inn en klage angående din kontrollsanksjon.",
+
+    "rules": "Regler",
+    "rule": "Regel",
+    "rules_description": "Hvorfor ble jeg illagt?",
+
+    "logout": "Logg ut",
+
+    "change_language": "Endre språk",
+
+    "no_ticket_data": "Ingen kontrollsanksjon-data tilgjengelig.",
+    "error": "Feil",
+
+    "return_back": "Gå tilbake",
+
+    "place_info": "Stedsinformasjon",
+    "car_info": "Bilinformasjon",
+    "register_number": "Registreringsnummer",
+    "land": "Land",
+    "brand": "Merke",
+    "color": "Farge",
+    "type": "Type",
+    "paper_comment": "Papirkommentar",
+    "out_comment": "Kontor",
+
+    "ticket_data": "kontrollsanksjon-data",
+    "ticket_id": "kontrollsanksjon-ID",
+    "kid_number": "KID-nummer",
+    "from": "Fra",
+    "to": "Til",
+
+    "total": "Totalt",
+    "paid_at": "Betalt kl",
+    "delivery": "Levering",
+    "registered_by": "Registrert av",
+
+    "ticket_images": "Kontrollsanksjon Bilder",
+    "alt_car_image": "Bil Bilde",
+
+    "why_charged": "Hvorfor vi belastet deg",
+    "loading_rules": "Laster regler",
+    "loading_rules_failure_message": "Kunne ikke laste regler. Vennligst prøv igjen senere.",
+
+    "upload_complaint_success_message": "Klagen ble lastet opp vellykket",
+
+    "first_name": "Fornavn",
+    "required_first_name": "Vennligst oppgi ditt fornavn",
+
+    "last_name": "Etternavn",
+    "required_last_name": "Vennligst oppgi ditt etternavn",
+
+    "address": "Adresse",
+    "required_address": "Vennligst oppgi din adresse",
+
+    "postal_code": "Postnummer",
+    "required_postal_code": "Vennligst oppgi ditt postnummer",
+
+    "phone_number": "Telefonnummer",
+    "required_phone_number": "Vennligst oppgi ditt telefonnummer",
+
+    "email": "E-post",
+    "required_email": "Vennligst oppgi din e-post",
+    "required_valid_email": "Vennligst oppgi en gyldig e-post",
+
+    "city_or_town": "By/Sted",
+    "required_city_or_town": "Vennligst oppgi din by/sted",
+
+    "country": "Land",
+    "select_your_country": "Velg ditt land",
+    "required_country": "Vennligst oppgi ditt land",
+
+    "complaint_text": "Klagetekst",
+    "required_complaint_text": "Vennligst oppgi din klage",
+
+    "attachments": "Vedlegg",
+    "attachments_description": "Legg ved støttedokumenter, PDF-er, eller bilder",
+    "click_to_upload": "Klikk for å laste opp",
+
+    "submit": "Send inn",
+
+    "username": "Brukernavn",
+    "required_username": "Vennligst oppgi ditt brukernavn!",
+    "password": "Passord",
+    "required_password": "Vennligst oppgi ditt passord!",
+    "login": "Logg inn",
+
+    "back_home": "Tilbake til hjem",
+    "website_doesnt_exist": "Nettstedet eksisterer ikke",
+
+    "client_welcome_message": "Velkommen til Klagesystemet",
+    "submit_complaint": "Send inn en klage",
+
+    "support_message": "For mer informasjon eller assistanse, vennligst kontakt vårt kundeservice.",
+
+
+    "see_policy": "Se våre retningslinjer",
+    "plate_number": "Skiltnummer",
+    "name": "Navn",
+    "phone": "Telefon",
+    "city": "By",
+    "status": "Status",
+    "complaint_info": "Klagens informasjon",
+    "complete": "Fullført"
+}

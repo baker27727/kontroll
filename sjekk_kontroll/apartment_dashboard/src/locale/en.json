@@ -1,0 +1,156 @@
+{
+    "cars_page": {
+        "title": "Registered Cars",
+        "add_car": "Add Car",
+        "car_limit_warning": "You can register up to {{max}} cars. You have registered {{current}} car(s).",
+        "no_cars_registered": "No cars registered",
+        "expires_in": "{{days}} day{{days !== 1 ? 's' : ''}} {{hours}}:{{minutes < 10 ? '0' : ''}}{{minutes}}:{{seconds < 10 ? '0' : ''}}{{seconds}}",
+        "delete_car_modal": {
+        "title": "Delete Car",
+        "content": "Are you sure you want to delete this car?"
+        },
+        "add_car_modal": {
+        "title": "Add New Car",
+        "car_number_label": "Car Number",
+        "car_number_placeholder": "Example: ABC123",
+        "submit": "Add Car"
+        },
+        "confirm_add_car_modal": {
+        "title": "Confirm Add Car",
+        "content": "Are you sure you want to add the car with plate number {{plate_number}}?"
+        }
+    },
+
+    "earnings_page": {
+        "title": "Earnings and Payments",
+        "current_earnings": "Current Earnings",
+        "monthly_payments": "Monthly Payments",
+        "month_earnings": "{{month}}: {{amount}} NOK",
+        "amount": "{{amount}} NOK",
+        "months": {
+            "january": "January",
+            "february": "February",
+            "march": "March",
+            "jan": "Jan",
+            "feb": "Feb",
+            "mar": "Mar"
+        }
+    },
+
+    "home_dashboard": {
+        "welcome": "Welcome, {{name}}",
+        "recent_activity": "Recent Activity",
+        "expires_in": "Expires in: {{days}}d {{hours}}h {{minutes}}m",
+        "view_all_cars": "View all cars →",
+        "your_cars": "Your Cars",
+        "registered_cars": "Registered cars",
+        "car_limit_reached": "Car limit reached",
+        "manage_cars": "Manage Cars →",
+        "shared_parking": {
+        "title": "Shared Parking",
+        "location": "Block A, Spot 5",
+        "standby_time": "2 hours",
+        "rate": "{{rate}} NOK/hr",
+        "current_rate": "Current rate",
+        "available": "Available",
+        "not_available": "Not Available",
+        "time_range": "{{from}} - {{to}}",
+        "manage_sharing_disabled": "Manage Sharing (Disabled)"
+        },
+        "quick_stats": {
+            "title": "Quick Stats",
+            "next_payment": "Next Payment",
+            "monthly_earnings": "Monthly Earnings",
+            "active_locations": "Active Locations"
+        },
+        "earnings_overview_disabled": "Earnings Overview (Disabled)",
+        "months": {
+            "jan": "Jan",
+            "feb": "Feb",
+            "mar": "Mar",
+            "apr": "Apr",
+            "may": "May",
+            "jun": "Jun"
+        }
+    },
+    "locations_page": {
+        "title": "Your Locations",
+        "add_location": "Add Location",
+        "no_locations": "No locations yet",
+        "table": {
+            "code": "Code",
+            "policy": "Policy",
+            "city": "City",
+            "area": "Area",
+            "status": "Status",
+            "actions": "Actions"
+        },
+        "status": {
+            "certified": "Certified",
+            "in_review": "In Review"
+        },
+        "start_sharing": "Start Sharing",
+        "stop_sharing": "Stop Sharing",
+        "add_location_modal": {
+            "title": "Add New Location",
+            "code": "Location Code",
+            "code_placeholder": "Enter location code",
+            "policy": "Policy",
+            "policy_placeholder": "Enter policy",
+            "city": "City",
+            "city_placeholder": "Enter city",
+            "area": "Area",
+            "area_placeholder": "Enter area",
+            "submit": "Add Location"
+        }
+    },
+
+    "profile_page": {
+        "title": "Profile Information",
+        "name": "Name",
+        "apartment_number": "Apartment Number",
+        "email": "Email",
+        "change_password": "Change Password",
+        "logout": "Logout",
+        "password_change_success": "Password changed successfully",
+        "password_change_success_description": "Your password has been changed successfully",
+        "password_change_error": "Failed to change password",
+        "change_password_modal": {
+            "title": "Change Password",
+            "current_password": "Current Password",
+            "current_password_placeholder": "Enter your current password",
+            "new_password": "New Password",
+            "new_password_placeholder": "Enter your new password",
+            "submit": "Change Password"
+        }
+    },
+
+    "share_page": {
+        "title": "Share and Earn",
+        "current_shared_parking": {
+            "title": "Current Shared Parking",
+            "location": "Location",
+            "location_value": "Block A, Spot 5",
+            "hourly_rate": "Hourly Rate",
+            "rate_value": "{{rate}} NOK",
+            "availability": "Availability",
+            "available": "Available",
+            "not_available": "Not Available",
+            "standby_time": "Standby Time",
+            "standby_time_value": "2 hours",
+            "available_hours": "Available Hours",
+            "time_range": "{{from}} - {{to}}"
+        },
+        "form": {
+            "location": "Location",
+            "location_placeholder": "Enter location",
+            "hourly_rate": "Hourly Rate (NOK)",
+            "hourly_rate_placeholder": "Enter hourly rate",
+            "description": "Description",
+            "description_placeholder": "Enter description",
+            "account_number": "Account Number",
+            "account_number_placeholder": "Enter account number",
+            "submit": "Submit"
+        }
+    }
+}

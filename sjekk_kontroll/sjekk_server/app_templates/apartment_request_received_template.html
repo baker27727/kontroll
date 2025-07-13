@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .header {
+      background-color: #2d5f9b;
+      padding: 20px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .header img {
+      max-width: 150px;
+    }
+    .email-body {
+      padding: 20px;
+    }
+    .email-body h1 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .email-body p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+    .data-list {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+    .data-list li {
+      background-color: #f9f9f9;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-left: 4px solid #2d5f9b;
+    }
+    .data-list li span {
+      font-weight: bold;
+      color: #2d5f9b;
+    }
+    .footer {
+      background-color: #f0f0f0;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+    .footer a {
+      color: #2d5f9b;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="email-container">
+    <!-- Header -->
+    <div class="header">
+      <img src="https://yourcompanylogo.com/logo.png" alt="Company Logo">
+      <h2>PARKSYNC Apartment Request Confirmation</h2>
+    </div>
+
+    <!-- Email Body -->
+    <div class="email-body">
+      <h1>Hello {{owner_name}},</h1>
+      <p>Thank you for submitting your registration request! We have received the following details and will process your request shortly:</p>
+
+      <!-- List of submitted data -->
+      <ul class="data-list">
+        <li><span>Username:</span> {{username}}</li>
+        <li><span>Email:</span> {{email}}</li>
+        <li><span>Building Number:</span> {{building_number}}</li>
+        <li><span>Apartment Number:</span> {{apartment_number}}</li>
+        <li><span>Floor Number:</span> {{floor_number}}</li>
+        <li><span>Residential Quarter:</span> {{residential_quarter}}</li>
+      </ul>
+
+      <p>Our team will review your request and get back to you as soon as possible. If you need to update any details or have any questions, feel free to <a href="mailto:support@parksync.com">contact us</a>.</p>
+
+      <p>Kind regards,</p>
+      <p>The PARKSYNC Team</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>&copy; 2024 PARKSYNC. All rights reserved.</p>
+      <p><a href="https://parksync.com">Visit our website</a> | <a href="mailto:support@parksync.com">Contact Support</a></p>
+    </div>
+  </div>
+
+</body>
+</html>

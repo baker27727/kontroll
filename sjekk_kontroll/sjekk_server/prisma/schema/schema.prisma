@@ -1,0 +1,627 @@
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["prismaSchemaFolder"]
+}
+
+datasource db {
+  provider = "postgres"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id Int @id @default(autoincrement())
+  name String
+  pnid String @unique
+  unique_code String?
+  password String
+
+  created_at String
+  updated_at String?
+  deleted_at String?
+  violations Violation[]
+  shifts Shift[]
+}
+
+enum RegisterationSource {
+  normal_place_dashboard
+  system
+}
+
+model NormalCar {
+  id Int @id @default(autoincrement())
+  registered_car_id Int @unique
+  registered_car  RegisteredCar @relation(fields: [registered_car_id], references: [id])
+
+  free_parking_hours Int
+
+  registeration_source RegisterationSource
+
+  normal_place_id Int
+  normal_place NormalPlace @relation(fields: [normal_place_id], references: [id])
+
+  created_at String
+  updated_at String?
+  deleted_at String?
+}
+
+enum ResidentialRegisterationType {
+  reserved
+  guest
+}
+
+model ResidentialCar {
+  id Int @id @default(autoincrement())
+  parking_type ResidentialRegisterationType
+  subscription_plan_days Int
+
+  registered_car_id Int @unique
+  registered_car  RegisteredCar @relation(fields: [registered_car_id], references: [id])
+
+  residential_quarter_id Int
+  residential_quarter ResidentialQuarter @relation(fields: [residential_quarter_id], references: [id])
+
+  apartment_id Int?
+  apartment Apartment? @relation(fields: [apartment_id], references: [id])
+
+  updated_at String?
+  deleted_at String?
+}
+
+enum RegisteredCarType {
+  normal
+  residential
+  apartment
+}
+
+enum SystemCarRegistrationType {
+  reserved
+  guest
+  public
+}
+
+enum SystemCarType {
+  apartment
+  residential
+}
+
+model SystemCar {
+  id Int @id @default(autoincrement())
+  plate_number String
+  last_registered_date String
+  registration_type SystemCarRegistrationType
+  car_type SystemCarType
+  residential_quarter_id Int
+}
+
+model RegisteredCar {
+  id Int @id @default(autoincrement())
+  plate_number String
+  car_model String?
+  car_type String?
+  car_description String?
+  car_color String?
+  manufacture_year String?
+
+  registration_date String
+  expire_date String
+
+  registration_type RegisteredCarType
+  
+  normal_car NormalCar?
+  residential_car ResidentialCar?
+
+  updated_at String?
+  deleted_at String?
+
+  place_id Int
+  place Place @relation(fields: [place_id], references: [id])
+
+}
+
+model PartnerDashboard {
+  id Int @id @default(autoincrement())
+  access_username String @unique
+  access_code String
+
+  partner_id Int @unique
+  partner Partner? @relation(fields: [partner_id], references: [id], onDelete: Cascade)
+}
+
+model Partner {
+  id Int @id @default(autoincrement())
+  name String
+  phone_number String
+
+  created_at String
+  updated_at String?
+  deleted_at String?
+
+  owned_places NormalPlace[]
+  owned_places_count Int @default(0)
+  dashboard PartnerDashboard?
+  place_requests PlaceRequest[]
+}
+
+model PublicPlaceNotificationSubscription {
+  id Int @id @default(autoincrement())
+  public_dashboard_id Int
+  public_dashboard NormalPlaceDashboard @relation(fields: [public_dashboard_id], references: [id])
+  push_manager_subscription String? @db.VarChar(8000)
+  user_agent String
+  ip_address String
+  channel NotificationChannel @default(public_place)
+  channel_member_id Int
+}
+
+
+model NormalPlaceDashboard {
+  id Int @id @default(autoincrement())
+  access_username String @unique
+  access_code String
+
+  notification_subscriptions PublicPlaceNotificationSubscription[]
+
+  profile_image String?
+  free_parking_hours Int
+  place_name String
+  place_type String
+  created_at String
+  updated_at String?
+  deleted_at String?
+
+  normal_place_id Int
+  normal_place NormalPlace @relation(fields: [normal_place_id], references: [id])
+
+}
+
+model NormalPlace {
+  id Int @id @default(autoincrement())
+  partner_id Int?
+  partner Partner? @relation(fields: [partner_id], references: [id], onDelete: SetNull)
+
+  location String
+  policy String
+  code String
+
+  place_type String
+
+  place_id Int @unique
+  place  Place @relation(fields: [place_id], references: [id])
+
+  dashboards NormalPlaceDashboard[]
+  registered_cars NormalCar[]
+
+  updated_at String?
+  deleted_at String?
+}
+
+model ResidentialDashboardNotificationSubscription {
+  id Int @id @default(autoincrement())
+  residential_dashboard_id Int
+  residential_dashboard ResidentialDashboard @relation(fields: [residential_dashboard_id], references: [id])
+  push_manager_subscription String? @db.VarChar(8000)
+  user_agent String
+  ip_address String
+  channel NotificationChannel @default(public_place)
+  channel_member_id Int
+}
+
+model ResidentialDashboard {
+  id Int @id @default(autoincrement())
+  access_username String
+  access_code String
+
+
+  apartment_registration_qrcode String?
+  apartment_registration_qrcode_link String?
+  notification_subscriptions ResidentialDashboardNotificationSubscription[]
+
+
+  residential_quarter_id Int @unique
+  residential_quarter ResidentialQuarter @relation(fields: [residential_quarter_id], references: [id])
+
+  created_at String
+  updated_at String?
+  deleted_at String?
+}
+
+model ResidentialQuarter {
+  id Int @id @default(autoincrement())
+  location String
+  policy String
+  code String
+
+  quarter_name String
+  max_cars_registrations Int
+  current_total_registered_cars Int @default(0)
+  guest_free_days Int?
+  max_cars_by_apartment Int?
+
+  created_at String @default("")
+  updated_at String?
+  deleted_at String?
+
+  place_id Int @unique
+  place  Place @relation(fields: [place_id], references: [id])
+
+  residential_dashboard ResidentialDashboard?
+  residential_cars ResidentialCar[]
+  apartment_requests ApartmentRequest[]
+  apartments Apartment[]
+}
+
+
+
+enum PlaceType {
+  normal
+  residential
+  apartment
+}
+
+model Place {
+  id Int @id @default(autoincrement())
+  location String
+  policy String
+  code String
+  created_at String
+  updated_at String?
+  deleted_at String?
+
+  place_type PlaceType
+
+  normal_place NormalPlace?
+  residential ResidentialQuarter?
+
+  violations Violation[]
+  registered_cars RegisteredCar[]
+}
+
+model Extras {
+  id Int @id @default(autoincrement())
+  rule_id Int @unique
+  rule Rule? @relation(fields: [rule_id], references: [id], onDelete: Cascade)
+
+  meter_receipt_number Boolean @default(false)
+  meter_number Boolean @default(false)
+  expiry_date Boolean @default(false)
+  paid_amount Boolean @default(false)
+}
+
+model Rule {
+  id Int @id @default(autoincrement())
+  name String
+  charge Float
+  policy_time Int
+  extras Extras?
+
+  created_at String 
+  updated_at String?
+  deleted_at String?
+}
+
+
+model Brand {
+  id Int @id @default(autoincrement())
+  value String
+}
+
+model Color {
+  id Int @id @default(autoincrement())
+  value String
+}
+
+enum PlaceRequestType {
+  creation
+  deletion
+}
+
+enum RequestStatus {
+  pending
+  approved
+  rejected
+}
+
+model PlaceRequest {
+  id             Int       @id @default(autoincrement())
+  request_type    PlaceRequestType
+  
+  location String?
+  policy String?
+  code String?
+
+  place_id Int?
+
+  requested_by_id  Int
+  requested_by Partner @relation(fields: [requested_by_id], references: [id])
+  status         RequestStatus @default(pending)
+  created_at      String
+  updated_at String?
+  deleted_at String?
+
+  approval PlaceRequestApproval?
+}
+
+enum ApprovalStatus {
+  approved
+  rejected
+}
+
+model PlaceRequestApproval {
+  id           Int         @id @default(autoincrement())
+  request_id    Int @unique
+  request      PlaceRequest @relation(fields: [request_id], references: [id])
+  
+  status       ApprovalStatus
+  comments     String?
+  created_at    String
+}
+
+
+model UserPlaceLogin {
+  id Int @id @default(autoincrement())
+  place_name String
+  login_time String
+  logout_time String
+
+  shift_id Int
+  shift Shift @relation(fields: [shift_id], references: [id])
+}
+
+model Shift {
+  id Int @id @default(autoincrement())
+  start_date String
+  end_date String?
+  pnid String
+  logins UserPlaceLogin[]
+  total_completed_violations Int @default(0)
+  created_at String
+  session_id String
+  user_id Int
+  user User @relation(fields: [user_id], references: [id])
+
+}
+
+model ViolationImage {
+  id Int @id @default(autoincrement())
+  path String
+  date String
+
+  violation_id Int
+  violation Violation @relation(fields: [violation_id], references: [id])
+}
+
+model PlateInfo {
+  id Int @id @default(autoincrement())
+  violation_id Int @unique
+  violation Violation @relation(fields: [violation_id], references: [id])
+
+  car_model String?
+  plate_number String?
+  manufacture_year String?
+  car_description String?
+  car_type String?
+  car_color String?
+  country_name String?
+  country_code String?
+}
+
+model TicketInfo {
+  id Int @id @default(autoincrement())
+  ticket_number String @unique
+  ticket_image String
+  print_option String
+  payment_date String?
+  barcode_image String
+  serial_number String
+  created_at String
+
+  kid String @default("")
+
+  violation_id Int @unique
+  violation Violation @relation(fields: [violation_id], references: [id])
+}
+
+model ViolationExtraValues {
+  id Int @id @default(autoincrement())
+
+  violation_rule_id Int @unique
+  violation_rule ViolationRule @relation(fields: [violation_rule_id], references: [id])
+
+  meter_receipt_number String?
+  meter_number String?
+  paid_amount String?
+  expiry_date String?
+}
+
+model ViolationExtras {
+  id Int @id @default(autoincrement())
+
+  violation_rule_id Int @unique
+  violation_rule ViolationRule @relation(fields: [violation_rule_id], references: [id])
+
+  meter_receipt_number Boolean @default(false)
+  meter_number Boolean @default(false)
+  paid_amount Boolean @default(false)
+  expiry_date Boolean @default(false)
+}
+
+model ViolationRule {
+  id Int @id @default(autoincrement())
+
+  violation_id Int
+  violation Violation @relation(fields: [violation_id], references: [id])
+
+  name String
+  charge Float
+  policy_time Int
+  extras ViolationExtras?
+  extras_values ViolationExtraValues?
+}
+
+model Violation {
+  id Int @id @default(autoincrement())
+  user_id Int
+  created_by User @relation(fields: [user_id], references: [id])
+
+  ticket_comment String
+  system_comment String
+  images ViolationImage[]
+
+  place_id Int
+  place Place @relation(fields: [place_id], references: [id])
+
+  total_charge Float
+  ticket_info TicketInfo?
+
+  plate_info PlateInfo?
+  is_car_registered Boolean
+  
+  place_login_time String
+  print_option String
+
+  created_at String
+  deleted_at String?
+
+  is_locked Boolean @default(false)
+  rules ViolationRule[]
+  session_id String
+
+    payment Payment?
+
+}
+
+model Email {
+  id Int @id @default(autoincrement())
+  sender String
+  receiver String
+  content String
+  subject String
+  sent_at String
+}
+
+model CarLog {
+  id Int @id @default(autoincrement())
+  start_date String
+  end_date String
+
+  registered_by String
+
+  place_location String
+  place_code String
+  place_policy String
+
+  car_model String?
+  car_type String?
+  car_description String?
+  car_color String?
+  manufacture_year String?
+  plate_number String
+
+  created_at String
+  place_id Int
+}
+
+model CarLogReport {
+  id Int @id @default(autoincrement())
+  file_name String
+  file_path String
+  notes String
+
+  total_parkings Int
+  total_parking_time Int
+  average_parking_time Float
+
+  created_at String
+}
+
+model ApartmentNotificationSubscription {
+  id Int @id @default(autoincrement())
+  aprtment_id Int
+  apartment Apartment @relation(fields: [aprtment_id], references: [id])
+  push_manager_subscription String? @db.VarChar(8000)
+  user_agent String
+  ip_address String
+  channel NotificationChannel @default(apartment)
+  channel_member_id Int
+}
+
+model Apartment {
+  id Int @id @default(autoincrement())
+  owner_name String
+  username String
+  password String
+  apartment_number String
+  email String
+  building_number String?
+  floor_number String?
+  created_at String
+
+  residential_quarter_id Int
+  residential_quarter ResidentialQuarter @relation(fields: [residential_quarter_id], references: [id])
+
+  residential_cars ResidentialCar[]
+
+  notification_subscriptions ApartmentNotificationSubscription[]
+}
+
+model ApartmentRequest {
+  id Int @id @default(autoincrement())
+  owner_name String
+  username String
+  password String
+  apartment_number String
+  email String
+  building_number String?
+  floor_number String?
+  created_at String
+
+  residential_quarter_id Int
+  residential_quarter ResidentialQuarter @relation(fields: [residential_quarter_id], references: [id])
+}
+
+model ApartmentLocation {
+  id Int @id @default(autoincrement())
+}
+
+model SystemNotificationComponent {
+  id Int @id @default(autoincrement())
+  title String
+  body String?
+  icon String?
+  image String?
+  is_favorite Boolean @default(false)
+  sent_times Int @default(0)
+  created_at String
+  updated_at String?
+}
+
+enum NotificationChannel {
+  apartment
+  residential
+  public_place
+}
+
+model Notification {
+  id Int @id @default(autoincrement())
+  title String
+  body String?
+  icon String?
+  image String?
+  is_clicked Boolean @default(false)
+  sent_at String
+  channel NotificationChannel
+  channel_member_id Int
+}
+
+enum ManagerRole {
+  admin
+  superuser
+}
+
+model Manager {
+  id Int @id @default(autoincrement())
+  username String
+  password String
+  created_at String
+  role ManagerRole
+}

@@ -1,0 +1,32 @@
+{
+    "plate_number": "Registreringsnummer",
+    "enter_plate_number": "Skriv inn registreringsnummer her",
+    "confirm": "Bekreft",
+
+    "drop_image_here": "Slipp bildet her ...",
+    "drag_drop_image": "Dra og slipp profilbilde her, eller klikk for å bla gjennom",
+    "take_photo": "Ta bilde",
+    "name": "Navn",
+    "email": "E-post",
+    "bio": "Biografi",
+    "please_input_name": "Vennligst skriv inn navnet ditt!",
+    "please_input_valid_email": "Vennligst skriv inn en gyldig e-postadresse!",
+    "please_input_bio": "Vennligst skriv inn biografien din!",
+    "required_access_code": "Vennligst skriv inn tilgangskoden din",
+    "login": "Logg inn",
+    "login_successful": "Innlogging vellykket",
+
+    "website_doesnt_exist": "Nettstedet du leter etter eksisterer ikke.",
+    "back_home": "Tilbake til Hjem",
+
+    "edit": "Rediger",
+    "registration_link": "Registreringslenke",
+    "start_time": "Starttid",
+    "end_time": "Sluttid",
+    "time_left": "Gjenstående tid",
+    "expired": "Utløpt",
+
+    "registration_info": "Registreringsinformasjon",
+    "registration_success": "Bilen med registreringsnummeret {{plate}} ble registrert",
+    "registration_error": "{{error}}"
+}

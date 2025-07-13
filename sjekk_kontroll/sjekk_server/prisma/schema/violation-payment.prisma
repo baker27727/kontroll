@@ -1,0 +1,98 @@
+
+model CardHolderDetails {
+  id Int @id @default(autoincrement())
+  full_name String
+  card_number String
+  email String?
+  country String?
+  payment_metadata_id Int? @unique
+  payment_metadata PaymentMetadata? @relation(fields: [payment_metadata_id], references: [id])
+}
+
+enum LogLevel {
+  info
+  warning
+  error
+  critical
+}
+
+model PaymentLogs {
+  id Int @id @default(autoincrement())
+  action String
+  details String
+  level LogLevel
+  timestamp String
+}
+
+enum PaymentMethod {
+  card
+  apple_pay
+  google_pay
+}
+
+enum PaymentStatus {
+  idle
+  overdued
+  refunded
+  completed
+}
+
+enum Currency {
+  nok
+  usd
+}
+
+model Refund {
+  id Int @id @default(autoincrement())
+  charge_id String
+  stripe_refund_id String
+  payment_intent_id String
+
+  refund_amount Float
+  currency Currency
+
+  kid_number String
+
+  payment_id Int? @unique
+  payment Payment? @relation(fields: [payment_id], references: [id])
+
+  requested_at String @default("")
+}
+
+model Payment {
+  id Int @id @default(autoincrement())
+  violation_id Int
+  kid_number String @unique
+  required_amount Float
+  
+  status PaymentStatus @default(idle)
+
+
+  init_date String
+  refund Refund?
+
+  plate_number String
+  control_number String
+
+  payment_intent_client_secret String @default("")
+
+  sanction_id Int? @unique
+  sanction Violation? @relation(fields: [sanction_id], references: [id])
+
+  metadata PaymentMetadata?
+}
+
+model PaymentMetadata {
+  id Int @id @default(autoincrement())
+  charge_id String
+  payment_intent_id String
+  payment_id Int? @unique
+  payment Payment? @relation(fields: [payment_id], references: [id])
+
+  receipt_link String?
+  currency String @default("nok")
+  payment_method PaymentMethod?
+  paid_at String?
+
+  card_holder_details CardHolderDetails?
+}

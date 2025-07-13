@@ -1,0 +1,359 @@
+{
+    "translations_information_v1": {
+        "status": "In process",
+        "date": "13-8-2024"
+    },
+    
+    "attachments_block": {
+        "file_upload": "File Upload",
+        "upload_files_success": "Files uploaded successfully",
+        "upload_files_failure": "Failed to upload files",
+        "remove": "Remove",
+        "attachments": "Attachments",
+        "upload_attachments": "Upload and manage your attachments",
+        "control_number": "Control Number",
+        "upload_file_button": "Upload File",
+        "save_button": "Save",
+        "uploaded_files": "Uploaded Files",
+        "no_files_uploaded": "No files uploaded",
+        "save_new_attachments_question_title": "Save New Attachment?",
+        "save_new_attachments_question_content": "Are you sure you want to save these attachments?",
+        "cancel_button": "Cancel",
+        "ok_button": "OK"
+    },
+
+    "home_block": {
+        "financial_dashboard": "Financial Dashboard",
+        "welcome_message": "Welcome to the admin panel",
+        "login_time": "Login Time {{login_time}}",
+        "logout_button": "Logout",
+        "navigation_boxes": {
+            "sanctions": "Sanctions",
+            "manage_sanctions_message": "Manage and review all sanctions-related activities related to financial transactions.",
+            "view_sanctions_button": "View Sanctions",
+            "attachments": "Attachments",
+            "manage_attachments_message": "View and manage all attachments related to financial transactions.",
+            "view_attachments_button": "View Attachments",
+            "accounting": "Accounting",
+            "manage_accounting_message": "Keep track of all accounting entries and financial records",
+            "view_accounting_button": "View Accounting",
+            "statistics": "Statistics",
+            "manage_statistics_message": "Analyze financial data and view statistics.",
+            "view_statistics_button": "View Statistics",
+            "reports": "Reports",
+            "manage_reports_message": "Generate and review financial reports.",
+            "view_reports_button": "View Reports",
+            "other_features": "Other Features",
+            "manage_other_features_message": "Explore additional features and tools.",
+            "view_other_features_button": "View Features"
+        }
+    },
+
+    "login_block": {
+        "login_success_title": "Login Successful",
+        "login_success_message": "You have successfully logged in.",
+        "login_failed_title": "Login Failed",
+        "financial_dashboard": "Financial Dashboard",
+
+        "form_fields": {
+            "username": "Username",
+            "enter_username": "Enter your username",
+            "password": "Password",
+            "enter_password": "Enter your password",
+            "login_button": "Login"
+        },
+
+        "trying_to_login": "Trying to login..."
+    },
+
+    "managers_block": {
+        "manager_deleted_title": "Manager Deleted",
+        "manager_deleted_message": "The manager was successfully deleted.",
+        "delete_failed_title": "Delete Failed",
+        "delete_failed_message": "The manager could not be deleted.",
+        "managers": "Managers",
+        "manage_managers_message": "View and manage all managers.",
+        "add_manager_button": "Add Manager",
+        "table_headers": {
+            "id": "ID",
+            "name": "Name",
+            "username": "Username",
+            "linked_email": "Linked Email",
+            "last_login_time": "Last Login Time",
+            "created_at": "Created At",
+            "role": "Role",
+            "actions": "Actions"
+        },
+        "pagination_message": "Showing {{from}} to {{to}} of {{total}} entries",
+        "previous_button": "Previous",
+        "next_button": "Next",
+        "delete_confirmation_title": "Delete Confirmation",
+        "delete_confirmation_message": "Are you sure you want to delete this manager?",
+        "cancel_button": "Cancel",
+        "ok_button": "OK",
+
+        "logins_block": {
+            "manager_logins": "Manager Logins",
+            "login_history": "Login History for the manager",
+            "login_time": "Login Time",
+            "ip_address": "IP Address",
+            "hostname": "Hostname",
+            "pagination_message": "Showing {{from}} to {{to}} of {{total}} entries",
+            "previous_button": "Previous",
+            "next_button": "Next"
+        },
+
+        "create_manager_block": {
+            "roles": {
+                "supervisor": "Supervisor",
+                "viewer": "Viewer"
+            },
+
+            "authorizations": {
+                "manage_users": "Manage Users",
+                "view_reports": "View Reports",
+                "edit_content": "Edit Content",
+                "manage_inventory": "Manage Inventory"
+            },
+
+            "password_mismatch_title": "Password Mismatch",
+            "password_mismatch_message": "The passwords do not match.",
+
+            "manager_created_title": "Manager Created",
+            "manager_created_message": "The manager was successfully created.",
+
+            "manager_creation_failed_title": "Creation Failed",
+            "manager_creation_failed_message": "The manager could not be created.",
+
+            "create_manager": "Create Manager",
+            
+            "form_fields": {
+                "name": "Name",
+                "enter_name": "Enter your name",
+                "username": "Username",
+                "enter_username": "Enter your username",
+                "email": "Email",
+                "enter_email": "Enter your email",
+                "password": "Password",
+                "enter_password": "Enter your password",
+                "confirm_password": "Confirm Password",
+                "enter_confirm_password": "Enter your confirm password",
+                "role": "Role",
+                "authorizations": "Authorizations",
+                "submit_button": "Create Manager"
+            }
+        },
+
+        "edit_manager_block": {
+            "manager_updated_title": "Manager Updated",
+            "manager_updated_message": "The manager was successfully updated.",
+
+            "manager_update_failed_title": "Update Failed",
+            "manager_update_failed_message": "The manager could not be updated.",
+
+            "edit_manager": "Edit Manager",
+            "update_manager_details": "Update Manager Details",
+
+            "roles": {
+                "admin": "Admin",
+                "supervisor": "Supervisor",
+                "viewer": "Viewer"
+            },
+
+            "form_fields": {
+                "name": "Name",
+                "enter_name": "Enter your name",
+                "username": "Username",
+                "enter_username": "Enter your username",
+                "email": "Email",
+                "enter_email": "Enter your email",
+                "role": "Role",
+                "submit_button": "Update Manager"
+            }
+        }
+    },
+
+    "reports_block": {
+        "report_created_title": "Report Created",
+        "report_created_message": "The report was successfully created.",
+
+        "report_creation_failed_title": "Creation Failed",
+        "report_creation_failed_message": "The report could not be created.",
+
+        "reports_and_finances": "Reports and Finances",
+        "view_finances_and_reports": "View detailed financial reports and statistics",
+
+        "start_date": "Start Date",
+        "end_date": "End Date",
+
+        "report_title": "Report Title",
+        "create_report_button": "Create Report",
+
+        "total_revenue": "Total Revenue",
+        "tax_deducted": "Tax Deducted (18)%",
+        "net_revenue": "Net Revenue",
+
+        "detailed_report": "Detailed Report",
+        "report_name": "Report Name",
+        "created_at": "Created At",
+        "actions": "Actions",
+        "view_pdf": "View PDF",
+
+        "pdf_viewer": "PDF Viewer",
+        "close_pdf_viewer": "Close PDF Viewer"
+    },
+
+    "sanctions_block": {
+        "collect_debt_title": "Collect Debt",
+        "collect_debt_message": "Collecting debt for selected sanction",
+
+        "collect_debt_failure_title": "Failed to collect debt for selected sanction",
+        "mark_as_paid_title": "Mark as paid",
+        "mark_as_paid_message": "Payment is completed",
+
+        "collect_debt_failure_message": "Failed to mark as paid",
+
+        "send_to_debt_collect_title": "Send to Debt Collect",
+        "send_to_debt_collect_message": "Sending to debt collect for selected sanction",
+
+        "send_to_debt_collect_failure_title": "Failed to send to debt collect for selected sanction",
+
+        "sanctions": "Sanctions",
+        "manage_sanctions": "Manage and review all sanctions-related activities",
+        "search": "Search",
+
+        "see_deleted_sanctions_button": "See Deleted Sanctions",
+        
+        "table_headers": {
+            "control_number": "Control Number",
+            "kid_number": "Kid Number",
+            "pnid": "PNID",
+            "due_date": "Due Date",
+            "amount": "Amount",
+            "status": "Status",
+            "actions": "Actions"
+        },
+
+        "no_sanctions_found": "No sanctions found",
+        "actions_buttons": {
+            "collect_debt": "Collect",
+            "details": "Details",
+            "invoice": "Invoice",
+            "delete": "Delete"
+        },
+
+        "pagination_message": "Showing {{from}} to {{to}} of {{total}} entries",
+        "previous_button": "Previous",
+        "next_button": "Next",
+
+        "collect_debt_modal": {
+            "collect_debt_confirmation_title": "Collect Debt Confirmation",
+            "collect_debt_confirmation_message": "Are you sure you want to collect the debt?",
+
+            "cancel_button": "Cancel",
+            "ok_button": "OK"
+        },
+
+        "delete_sanction_modal": {
+            "delete_confirmation_title": "Delete Confirmation",
+            "delete_confirmation_message": "Are you sure you want to delete this sanction?",
+
+            "cancel_button": "Cancel",
+            "ok_button": "OK"
+        },
+
+        "invoice_modal": {
+            "control_number": "Control Number",
+            "kid_number": "Kid Number",
+            "pnid": "PNID",
+            "due_date": "Due Date",
+            "total_charge": "Total Charge",
+            "rules": "Rules"
+        },
+
+
+
+        "sanction_details_block": {
+            "paid": "Paid",
+            "not_paid": "Not Paid",
+            "sent_to_debt_collect": "Sent to Debt Collect",
+
+            "sanction_details": "Sanction Details",
+            "case_number": "Case Number",
+            "employee_number": "Employee Number",
+            "due_date": "Due Date",
+            "amount": "Amount",
+            "invoice_report": "Invoice Report",
+            "client_name": "Client Name",
+            "address": "Address",
+            "violation_number": "Violation Number",
+            "rule": "Rule",
+            "charge": "Charge",
+            "total_charge": "Total Charge",
+            "case_files": "Case Files",
+            "add_files_button": "Add Files",
+            "no_files_found": "No files found",
+
+            "payment_details": "Payment Details",
+            "no_payment_available": "No payment available",
+            "client_name_payment": "Client Name",
+            "plate_number": "Plate Number",
+            "charged_at": "Charged At",
+            "paid_at": "Paid At",
+            "paid_amount": "Paid Amount",
+            "control_number": "Control Number"
+        },
+
+        "deleted_sanctions_block": {
+            "deleted_sanctions": "Deleted Sanctions",
+            "manage_deleted_sanctions": "Manage and review all deleted sanctions-related activities",
+            "search": "Search",
+            "table_headers": {
+                "control_number": "Control Number",
+                "kid": "Kid",
+                "pnid": "PNID",
+                "due_date": "Due Date",
+                "amount": "Amount",
+                "actions": "Actions"
+            },
+
+            "no_deleted_sanctions_found": "No deleted sanctions found",
+            "restore_button": "Restore",
+            "invoice": "Invoice",
+
+            "pagination_message": "Showing {{from}} to {{to}} of {{total}} entries",
+            "previous_button": "Previous",
+            "next_button": "Next",
+
+            "restore_modal":{
+                "restore_confirmation_title": "Restore Confirmation",
+                "restore_confirmation_message": "Are you sure you want to restore this deleted sanction?",
+                "cancel_button": "Cancel",
+                "ok_button": "OK"
+            },
+
+            "invoice_modal": {
+                "control_number": "Control Number",
+                "kid_number": "Kid Number",
+                "pnid": "PNID",
+                "due_date": "Due Date",
+                "total_charge": "Total Charge",
+                "rules": "Rules"
+            }
+        }
+    },
+
+    "statistics_block": {
+        "paid_sanctions": "Paid Sanctions",
+        "unpaid_sanctions": "Unpaid Sanctions",
+        "statistics": "Statistics",
+        "analyze_finances": "Analyze your financial performance over time",
+        "start_date": "Start Date",
+        "end_date": "End Date",
+        "total_sanctions": "Total Sanctions",
+        "total_paid_sanctions": "Total Paid Sanctions",
+        "total_unpaid_sanctions": "Total Unpaid Sanctions",
+        "total_deleted_sanctions": "Total Deleted Sanctions"
+
+    }
+}

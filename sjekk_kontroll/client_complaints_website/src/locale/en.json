@@ -1,0 +1,113 @@
+{
+    "ticket_information": "Ticket Information",
+    "ticket_information_description": "View details about your ticket.",
+    "ticket_number": "Ticket Number",
+
+    "car_images": "Car Images",
+    "car_images_description": "View images related to your ticket.",
+
+    "complaint": "Complaint",
+    "complaint_description": "Submit a complaint regarding your ticket.",
+
+    "rules": "Rules",
+    "rule": "Rule",
+    "rules_description": "Why i was charged?",
+
+    "logout": "Logout",
+
+    "change_language": "Skifte språk",
+
+    "no_ticket_data": "No ticket data available.",
+    "error": "Error",
+
+    "return_back": "Return Back",
+
+    "place_info": "Place Information",
+    "car_info": "Car Information",
+    "register_number": "Reg.nr",
+    "land": "Land",
+    "brand": "Brand",
+    "color": "Color",
+    "type": "Type",
+    "paper_comment": "Paper Comment",
+    "out_comment": "Out Comment",
+
+    "ticket_data": "Ticket Data",
+    "ticket_id": "Ticket ID",
+    "kid_number": "KID number",
+    "from": "From",
+    "to": "To",
+
+    "total": "Total",
+    "paid_at": "Paid At",
+    "delivery": "Delivery",
+    "registered_by": "Registered By",
+
+    "ticket_images": "Ticket Images",
+    "alt_car_image": "Car Image",
+
+    "why_charged": "Why we did charge you",
+    "loading_rules": "Loading Rules",
+    "loading_rules_failure_message": "Failed to load rules. Please try again later.",
+
+    "upload_complaint_success_message": "Complaint was uploaded successfully",
+
+    "first_name":"First Name",
+    "required_first_name":"Please enter your first name",
+
+    "last_name":"Last Name",
+    "required_last_name":"Please enter your last name",
+
+    "address":"Address",
+    "required_address":"Please enter your address",
+
+    
+    "postal_code":"Postal Code",
+    "required_postal_code":"Please enter your postal code",
+
+    "phone_number":"Phone Number",
+    "required_phone_number":"Please enter your phone number",
+
+    "email":"Email",
+    "required_email":"Please enter your Email",
+    "required_valid_email":"Please enter a valid Email",
+
+    "city_or_town":"City/Town",
+    "required_city_or_town":"Please enter your City/Town",
+
+    "country":"Country",
+    "select_your_country":"Select your country",
+    "required_country":"Please enter your country",
+
+    "complaint_text": "Complain Text",
+    "required_complaint_text": "Please enter your complaint",
+
+    "attachments": "Attachments",
+    "attachments_description": "Attach supporting documents, PDFs, or images",
+    "click_to_upload": "Click to upload",
+
+    "submit": "Submit",
+
+    "username": "Username",
+    "required_username": "Please enter your username!",
+    "password": "Password",
+    "required_password": "Please enter your password!",
+    "login": "Log in",
+
+    "back_home": "Back Home",
+    "website_doesnt_exist": "Website does not exist",
+
+    "client_welcome_message": "Welcome to Complaint System",
+    "submit_complaint": "Submit a Complaint",
+
+    "support_message": "For more information or assistance, please contact our support team.",
+
+    "see_policy": "See Our policy",
+    "plate_number": "plate number",
+    "name": "Name",
+    "phone": "Phone",
+    "city": "City",
+    "status": "Status",
+    "complaint_info": "Complaint Info",
+    "complete": "Complete"
+}

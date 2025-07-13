@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment Registration Accepted</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .email-header {
+            background-color: #004d40;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .email-header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .email-body {
+            padding: 20px;
+        }
+        .email-body p {
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+        .highlight {
+            color: #004d40;
+            font-weight: bold;
+        }
+        .email-footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+        }
+        .email-footer a {
+            color: #004d40;
+            text-decoration: none;
+        }
+        .btn {
+            background-color: #0288d1;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="email-header">
+            <h1>Congratulations, {{owner_name}}!</h1>
+        </div>
+
+        <!-- Body -->
+        <div class="email-body">
+            <p>We are excited to inform you that your apartment registration request for <span class="highlight">{{residential_quarter}}</span> has been <strong>accepted</strong>!</p>
+
+            <p>Here are your registration details:</p>
+
+            <ul>
+                <li><strong>Owner Name:</strong> {{owner_name}}</li>
+                <li><strong>Username:</strong> {{username}}</li>
+                <li><strong>Email:</strong> {{email}}</li>
+                <li><strong>Building Number:</strong> {{building_number}}</li>
+                <li><strong>Apartment Number:</strong> {{apartment_number}}</li>
+                <li><strong>Floor Number:</strong> {{floor_number}}</li>
+            </ul>
+
+            <p>Feel free to access your personalized apartment dashboard to manage your account, payments, and maintenance requests:</p>
+            
+            <a href="{{dashboard_link}}" class="btn">Go to Your Dashboard</a>
+
+            <p>If you have any questions, don’t hesitate to contact us. We’re here to help you make the most of your apartment living experience!</p>
+            
+            <p>Thank you for choosing <span class="highlight">PARKSYNC</span> for your residential needs.</p>
+
+            <p>Best regards,<br>The PARKSYNC Team</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="email-footer">
+            <p>© {{year}} PARKSYNC, All Rights Reserved.</p>
+            <p><a href="https://parksync.com">Visit Our Website</a></p>
+        </div>
+    </div>
+</body>
+</html>

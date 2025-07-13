@@ -1,0 +1,32 @@
+{
+    "plate_number": "Plate Number",
+    "enter_plate_number": "Enter Plate Number Here",
+    "confirm": "Confirm",
+
+    "drop_image_here": "Drop the image here ...",
+    "drag_drop_image": "Drag 'n' drop profile image here, or click to browse",
+    "take_photo": "Take Photo",
+    "name": "Name",
+    "email": "Email",
+    "bio": "Bio",
+    "please_input_name": "Please input your name!",
+    "please_input_valid_email": "Please input a valid email!",
+    "please_input_bio": "Please input your bio!",
+    "required_access_code": "Please input your access code",
+    "login": "Login",
+    "login_successful": "Login successful",
+
+    "website_doesnt_exist": "The website you're looking for doesn't exist.",
+    "back_home": "Back to Home",
+
+    "edit": "Edit",
+    "registration_link": "Registration Link",
+    "start_time": "Start Time",
+    "end_time": "End Time",
+    "time_left": "Time Left",
+    "expired": "Expired",
+
+    "registration_info": "Registration Info",
+    "registration_success": "Car with plate {{plate}} was registered",
+    "registration_error": "{{error}}"
+}
